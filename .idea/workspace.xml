@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8ccacc76-6bc7-419a-bfbb-7d0c5d174513" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+    <list default="true" id="8ccacc76-6bc7-419a-bfbb-7d0c5d174513" name="Default" comment="Test 2">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codonOpt/test/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/codonOpt/Tth codon table.json" afterPath="$PROJECT_DIR$/codonOpt/example_data/Tth codon table.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/codonOpt/protein_seqs.fasta" afterPath="$PROJECT_DIR$/codonOpt/example_data/protein_seqs.fasta" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/codonOpt/tests.py" afterPath="$PROJECT_DIR$/codonOpt/test/tests.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/codonOpt/Sequence_maker.py" afterPath="$PROJECT_DIR$/codonOpt/Sequence_maker.py" />
     </list>
@@ -27,10 +30,43 @@
       <file leaf-file-name="Sequence_maker.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/codonOpt/Sequence_maker.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="109" column="35" lean-forward="true" selection-start-line="109" selection-start-column="35" selection-end-line="109" selection-end-column="35" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
-                <element signature="e#91#5113#0" expanded="false" />
+                <element signature="e#71#5178#0" expanded="false" />
+                <element signature="e#135#391#0" expanded="false" />
+                <element signature="e#459#862#0" expanded="false" />
+                <element signature="e#901#2503#0" expanded="false" />
+                <element signature="e#2546#5178#0" expanded="false" />
+                <element signature="e#5225#5782#0" expanded="false" />
+                <element signature="e#5816#7370#0" expanded="false" />
+                <element signature="e#7434#8008#0" expanded="false" />
+                <element signature="e#8058#8669#0" expanded="false" />
+                <element signature="e#8704#9309#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tests.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/codonOpt/test/tests.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+                <element signature="e#158#2105#0" expanded="false" />
+                <element signature="e#183#725#0" expanded="false" />
+                <element signature="e#773#963#0" expanded="false" />
+                <element signature="e#1020#1308#0" expanded="false" />
+                <element signature="e#1372#1503#0" expanded="false" />
+                <element signature="e#1581#1828#0" expanded="false" />
+                <element signature="e#1910#2105#0" expanded="false" />
+                <element signature="e#2162#3342#0" expanded="false" />
+                <element signature="e#2187#2796#0" expanded="false" />
+                <element signature="e#2871#3049#0" expanded="false" />
+                <element signature="e#3109#3224#0" expanded="false" />
+                <element signature="e#3289#3342#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -41,10 +77,15 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="Jupyter Notebook" />
+        <option value="Python Script" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>lower</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -63,6 +104,8 @@
         <option value="$PROJECT_DIR$/codonOpt/protein_seqs.fasta" />
         <option value="$PROJECT_DIR$/codonOpt/tests.py" />
         <option value="$PROJECT_DIR$/test notebook.ipynb" />
+        <option value="$PROJECT_DIR$/codonOpt/test/t.py" />
+        <option value="$PROJECT_DIR$/codonOpt/test/tests.py" />
         <option value="$PROJECT_DIR$/codonOpt/Sequence_maker.py" />
       </list>
     </option>
@@ -71,7 +114,9 @@
     <option name="width" value="1280" />
     <option name="height" value="800" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -87,8 +132,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -117,6 +160,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -124,12 +169,15 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FullScreen" value="true" />
     <property name="recentsLimit" value="5" />
+    <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/codonOpt/example_data" />
+      <recent name="$PROJECT_DIR$/codonOpt/test" />
       <recent name="$PROJECT_DIR$/codonOpt" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/codonOpt" />
     </key>
   </component>
@@ -145,7 +193,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Sequence_maker">
+  <component name="RunManager" selected="Python.tests">
     <configuration default="false" name="Sequence_maker" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -176,7 +224,25 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="codonOpt" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/codonOpt/tests.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/codonOpt/test/tests.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="t" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/codonOpt/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="codonOpt" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/codonOpt/test/t.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -278,14 +344,16 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
     </configuration>
-    <list size="2">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Python.Sequence_maker" />
       <item index="1" class="java.lang.String" itemvalue="Python.tests" />
+      <item index="2" class="java.lang.String" itemvalue="Python.t" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Python.Sequence_maker" />
-        <item index="1" class="java.lang.String" itemvalue="Python.tests" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Python.tests" />
+        <item index="1" class="java.lang.String" itemvalue="Python.t" />
+        <item index="2" class="java.lang.String" itemvalue="Python.Sequence_maker" />
       </list>
     </recent_temporary>
     <configuration default="true" type="tests" factoryName="Attests">
@@ -319,6 +387,14 @@
       <option name="presentableId" value="Default" />
       <updated>1497788006963</updated>
     </task>
+    <task id="LOCAL-00001" summary="Test 2">
+      <created>1497857701462</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1497857701462</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TodoView">
@@ -334,15 +410,14 @@
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26171243" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.49353796" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33835617" sideWeight="0.5226171" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.8319871" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.49353796" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33835617" sideWeight="0.47738287" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26979" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.49030694" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32876712" sideWeight="0.17285945" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32876712" sideWeight="0.82714057" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16438356" sideWeight="0.4806139" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1589041" sideWeight="0.4676898" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.49676898" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.49030694" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -352,21 +427,46 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Test 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test 2" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/codonOpt/Sequence_maker.py</url>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="8" />
+      <option name="time" value="9" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -376,7 +476,35 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#91#5113#0" expanded="false" />
+            <element signature="e#71#5178#0" expanded="false" />
+            <element signature="e#135#391#0" expanded="false" />
+            <element signature="e#459#862#0" expanded="false" />
+            <element signature="e#901#2503#0" expanded="false" />
+            <element signature="e#2546#5178#0" expanded="false" />
+            <element signature="e#5225#5782#0" expanded="false" />
+            <element signature="e#5816#7370#0" expanded="false" />
+            <element signature="e#7434#8008#0" expanded="false" />
+            <element signature="e#8058#8669#0" expanded="false" />
+            <element signature="e#8704#9309#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codonOpt/Sequence_maker.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1635">
+          <caret line="109" column="35" lean-forward="true" selection-start-line="109" selection-start-column="35" selection-end-line="109" selection-end-column="35" />
+          <folding>
+            <element signature="e#71#5178#0" expanded="false" />
+            <element signature="e#135#391#0" expanded="false" />
+            <element signature="e#459#862#0" expanded="false" />
+            <element signature="e#901#2503#0" expanded="false" />
+            <element signature="e#2546#5178#0" expanded="false" />
+            <element signature="e#5225#5782#0" expanded="false" />
+            <element signature="e#5816#7370#0" expanded="false" />
+            <element signature="e#7434#8008#0" expanded="false" />
+            <element signature="e#8058#8669#0" expanded="false" />
+            <element signature="e#8704#9309#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -386,7 +514,16 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#91#5113#0" expanded="false" />
+            <element signature="e#71#5178#0" expanded="false" />
+            <element signature="e#135#391#0" expanded="false" />
+            <element signature="e#459#862#0" expanded="false" />
+            <element signature="e#901#2503#0" expanded="false" />
+            <element signature="e#2546#5178#0" expanded="false" />
+            <element signature="e#5225#5782#0" expanded="false" />
+            <element signature="e#5816#7370#0" expanded="false" />
+            <element signature="e#7434#8008#0" expanded="false" />
+            <element signature="e#8058#8669#0" expanded="false" />
+            <element signature="e#8704#9309#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -396,7 +533,16 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#91#5113#0" expanded="false" />
+            <element signature="e#71#5178#0" expanded="false" />
+            <element signature="e#135#391#0" expanded="false" />
+            <element signature="e#459#862#0" expanded="false" />
+            <element signature="e#901#2503#0" expanded="false" />
+            <element signature="e#2546#5178#0" expanded="false" />
+            <element signature="e#5225#5782#0" expanded="false" />
+            <element signature="e#5816#7370#0" expanded="false" />
+            <element signature="e#7434#8008#0" expanded="false" />
+            <element signature="e#8058#8669#0" expanded="false" />
+            <element signature="e#8704#9309#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -406,30 +552,44 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#91#5113#0" expanded="false" />
+            <element signature="e#71#5178#0" expanded="false" />
+            <element signature="e#135#391#0" expanded="false" />
+            <element signature="e#459#862#0" expanded="false" />
+            <element signature="e#901#2503#0" expanded="false" />
+            <element signature="e#2546#5178#0" expanded="false" />
+            <element signature="e#5225#5782#0" expanded="false" />
+            <element signature="e#5816#7370#0" expanded="false" />
+            <element signature="e#7434#8008#0" expanded="false" />
+            <element signature="e#8058#8669#0" expanded="false" />
+            <element signature="e#8704#9309#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codonOpt/Sequence_maker.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#71#5178#0" expanded="false" />
+            <element signature="e#135#391#0" expanded="false" />
+            <element signature="e#459#862#0" expanded="false" />
+            <element signature="e#901#2503#0" expanded="false" />
+            <element signature="e#2546#5178#0" expanded="false" />
+            <element signature="e#5225#5782#0" expanded="false" />
+            <element signature="e#5816#7370#0" expanded="false" />
+            <element signature="e#7434#8008#0" expanded="false" />
+            <element signature="e#8058#8669#0" expanded="false" />
+            <element signature="e#8704#9309#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md" />
-    <entry file="file://$PROJECT_DIR$/codonOpt/Tth codon table.json">
+    <entry file="file://$PROJECT_DIR$/codonOpt/example_data/Tth codon table.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="11" lean-forward="false" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codonOpt/protein_seqs.fasta">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codonOpt/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="24" column="8" lean-forward="false" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -441,12 +601,83 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test notebook.ipynb" />
+    <entry file="file://$PROJECT_DIR$/codonOpt/test/t.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="30" column="7" lean-forward="true" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///anaconda/lib/python3.4/unittest/case.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="417" column="8" lean-forward="false" selection-start-line="417" selection-start-column="8" selection-end-line="417" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codonOpt/test/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codonOpt/example_data/protein_seqs.fasta">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codonOpt/test/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#158#2105#0" expanded="false" />
+            <element signature="e#183#725#0" expanded="false" />
+            <element signature="e#773#963#0" expanded="false" />
+            <element signature="e#1020#1308#0" expanded="false" />
+            <element signature="e#1372#1503#0" expanded="false" />
+            <element signature="e#1581#1828#0" expanded="false" />
+            <element signature="e#1910#2105#0" expanded="false" />
+            <element signature="e#2162#3342#0" expanded="false" />
+            <element signature="e#2187#2796#0" expanded="false" />
+            <element signature="e#2871#3049#0" expanded="false" />
+            <element signature="e#3109#3224#0" expanded="false" />
+            <element signature="e#3289#3342#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/codonOpt/Sequence_maker.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="109" column="35" lean-forward="true" selection-start-line="109" selection-start-column="35" selection-end-line="109" selection-end-column="35" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#91#5113#0" expanded="false" />
+            <element signature="e#71#5178#0" expanded="false" />
+            <element signature="e#135#391#0" expanded="false" />
+            <element signature="e#459#862#0" expanded="false" />
+            <element signature="e#901#2503#0" expanded="false" />
+            <element signature="e#2546#5178#0" expanded="false" />
+            <element signature="e#5225#5782#0" expanded="false" />
+            <element signature="e#5816#7370#0" expanded="false" />
+            <element signature="e#7434#8008#0" expanded="false" />
+            <element signature="e#8058#8669#0" expanded="false" />
+            <element signature="e#8704#9309#0" expanded="false" />
           </folding>
         </state>
       </provider>

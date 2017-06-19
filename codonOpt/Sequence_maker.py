@@ -2,8 +2,6 @@ from lea import *
 import logging
 import json
 
-# This is a test 2
-
 class CodonTable():
 
     def __init__(self, json_file_path='', low_cuttoff=0.0):
@@ -88,6 +86,7 @@ class CodonTable():
                               "C": {"TGC": 0.95, "TGT": 0.05},
                               "*": {"TAG": 0.3676, "TAA": 0.1948, "TGA": 0.4376}}
 
+        test_pass = True
         logging.debug('Checking codon table uses correct triplets...')
         for aa in self.codon_dict:
             triplets_in_codon_table = []
@@ -102,21 +101,29 @@ class CodonTable():
                 logging.warning('Codon Table uses incorrect triplets: ')
                 logging.warning('Should be: ' + str(sorted(triplets_in_test_table)))
                 logging.warning('But is: ' + str(sorted(triplets_in_codon_table)))
+                test_pass = False
                 raise NameError('Codon Table uses incorrect triplets', str(sorted(triplets_in_codon_table)))
 
         logging.debug('Passed')
+
+        return test_pass
 
 
 def check_protein_seq(protein_seq):
         logging.debug('Checking protein sequence is valid...')
         amino_acids = ['V', 'G', 'F', 'E', 'N', 'P', 'Q', 'M', 'K', 'T', 'S', 'W', 'A', 'R', 'D', 'L', 'Y', 'H', 'I', 'C', '*']
 
+        protein_seq = protein_seq.upper()
         for aa in protein_seq:
             if aa not in amino_acids:
                 logging.warning('Non amino acid character found in protein sequence: ' + aa)
-                raise NameError('Non amino acid character found in protein sequence:  ', aa)
+                raise NameError('Non amino acid character found in protein sequence')
+                return False
+
 
         logging.debug('Passed')
+
+        return True
 
 def translate(dna_seq):
         # This function will translate a DNA sequence to a protein sequence using the dna_to_aa_table
@@ -161,8 +168,10 @@ def check_dna_back_translation(dna_seq, protein_seq):
             logging.warning('Translation: ' + str(translated))
 
             raise NameError('Translation of dna seq to protein seq does not give the original protein seq')
+            return False
 
         logging.debug('Passed')
+        return True
 
 def generate_seq(protein_seq, codon_table):
     # Set variable to hold new dna sequence
@@ -186,16 +195,13 @@ def generate_seq(protein_seq, codon_table):
 
 
 
-
-
-
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO)
 
     # Protein sequence for testing...
     a_protein = "MRAVVFENKERVAVKEVNAPRLQHPLDALVRVHLAGICGSDLHLYHGKIPVLPGSVLGHEFVGQVEAVGEGIQDLQPGDWVVGPFHIACGTCPYCRRHQYNLCERGGVYGYGPMFGNLQGAQAEILRVPFSNVNLRKLPPNLSPERAIFAGDILSTAYGGLIQGQLRPGDSVAVIGAGPVGLMAIEVAQVLGASKILAIDRIPERLERAASLGAIPINAEQENPVRRVRSETNDEGPDLVLEAVGGAATLSLALEMVRPGGRVSAVGVDNAPSFPFPLASGLVKDLTFRIGLANVHLYIDAVLALLASGRLQPERIVSHYLPLEEAPRGYELFDRKEALKVLLVVRGGGSGDYKDDDDK**"
 
-    codon_table = CodonTable(json_file_path='Tth codon table.json', low_cuttoff=0.1)
+    codon_table = CodonTable(json_file_path='example_data/Tth codon table.json', low_cuttoff=0.1)
 
     seq = generate_seq(a_protein, codon_table)
 
