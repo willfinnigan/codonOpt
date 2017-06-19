@@ -2,6 +2,8 @@ from lea import *
 import logging
 import json
 
+# This is a test 2
+
 class CodonTable():
 
     def __init__(self, json_file_path='', low_cuttoff=0.0):
