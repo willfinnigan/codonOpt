@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8ccacc76-6bc7-419a-bfbb-7d0c5d174513" name="Default" comment="">
+    <list default="true" id="8ccacc76-6bc7-419a-bfbb-7d0c5d174513" name="Default" comment="Added more tests">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codonOpt/example_data/protein_seqs2.fasta" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/codonOpt/Sequence_maker.py" afterPath="$PROJECT_DIR$/codonOpt/SeqMake.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/codonOpt/test/tests.py" afterPath="$PROJECT_DIR$/codonOpt/test/tests.py" />
     </list>
     <ignored path="codonOpt.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -22,15 +25,54 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Sequence_maker.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/codonOpt/Sequence_maker.py">
+      <file leaf-file-name="SeqMake.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/codonOpt/SeqMake.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="66" column="58" lean-forward="false" selection-start-line="66" selection-start-column="58" selection-end-line="66" selection-end-column="58" />
+            <state relative-caret-position="152">
+              <caret line="228" column="8" lean-forward="false" selection-start-line="228" selection-start-column="8" selection-end-line="228" selection-end-column="8" />
               <folding>
-                <element signature="e#135#391#0" expanded="false" />
-                <element signature="e#459#862#0" expanded="false" />
-                <element signature="e#901#2503#0" expanded="false" />
+                <element signature="e#0#17#0" expanded="true" />
+                <element signature="e#94#5201#0" expanded="false" />
+                <element signature="e#158#414#0" expanded="false" />
+                <element signature="e#482#885#0" expanded="false" />
+                <element signature="e#924#2526#0" expanded="false" />
+                <element signature="e#2569#5201#0" expanded="false" />
+                <element signature="e#5226#5328#0" expanded="false" />
+                <element signature="e#5375#5932#0" expanded="false" />
+                <element signature="e#5966#7520#0" expanded="false" />
+                <element signature="e#7584#8158#0" expanded="false" />
+                <element signature="e#8206#8875#0" expanded="false" />
+                <element signature="e#8939#9103#0" expanded="false" />
+                <element signature="e#9151#9386#0" expanded="false" />
+                <element signature="e#9226#9361#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tests.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/codonOpt/test/tests.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="213">
+              <caret line="144" column="0" lean-forward="true" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+                <element signature="e#176#3000#0" expanded="false" />
+                <element signature="e#201#796#0" expanded="false" />
+                <element signature="e#844#1027#0" expanded="false" />
+                <element signature="e#1084#1365#0" expanded="false" />
+                <element signature="e#1429#1553#0" expanded="false" />
+                <element signature="e#1631#1871#0" expanded="false" />
+                <element signature="e#1953#2129#0" expanded="false" />
+                <element signature="e#2209#2542#0" expanded="false" />
+                <element signature="e#2616#3000#0" expanded="false" />
+                <element signature="e#3052#5304#0" expanded="false" />
+                <element signature="e#3077#3948#0" expanded="false" />
+                <element signature="e#4023#4201#0" expanded="false" />
+                <element signature="e#4261#4377#0" expanded="false" />
+                <element signature="e#4442#4495#0" expanded="false" />
+                <element signature="e#4571#5304#0" expanded="false" />
+                <element signature="e#5370#6248#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -73,8 +115,10 @@
         <option value="$PROJECT_DIR$/codonOpt/tests.py" />
         <option value="$PROJECT_DIR$/test notebook.ipynb" />
         <option value="$PROJECT_DIR$/codonOpt/test/t.py" />
-        <option value="$PROJECT_DIR$/codonOpt/test/tests.py" />
         <option value="$PROJECT_DIR$/codonOpt/Sequence_maker.py" />
+        <option value="$PROJECT_DIR$/codonOpt/example_data/protein_seqs2.fasta" />
+        <option value="$PROJECT_DIR$/codonOpt/test/tests.py" />
+        <option value="$PROJECT_DIR$/codonOpt/SeqMake.py" />
       </list>
     </option>
   </component>
@@ -82,9 +126,7 @@
     <option name="width" value="1280" />
     <option name="height" value="800" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -100,7 +142,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -129,6 +170,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -140,12 +182,13 @@
     <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/codonOpt" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/codonOpt/example_data" />
       <recent name="$PROJECT_DIR$/codonOpt/test" />
+      <recent name="$PROJECT_DIR$/codonOpt" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/codonOpt/example_data" />
       <recent name="$PROJECT_DIR$/codonOpt" />
     </key>
   </component>
@@ -161,7 +204,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.tests">
+  <component name="RunManager" selected="Python.Sequence_maker">
     <configuration default="false" name="Sequence_maker" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -174,7 +217,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="codonOpt" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/codonOpt/Sequence_maker.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/codonOpt/SeqMake.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -319,9 +362,9 @@
     </list>
     <recent_temporary>
       <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Python.tests" />
-        <item index="1" class="java.lang.String" itemvalue="Python.t" />
-        <item index="2" class="java.lang.String" itemvalue="Python.Sequence_maker" />
+        <item index="0" class="java.lang.String" itemvalue="Python.Sequence_maker" />
+        <item index="1" class="java.lang.String" itemvalue="Python.tests" />
+        <item index="2" class="java.lang.String" itemvalue="Python.t" />
       </list>
     </recent_temporary>
     <configuration default="true" type="tests" factoryName="Attests">
@@ -390,12 +433,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27382874" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27786753" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.49030694" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16438356" sideWeight="0.5226171" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.82714057" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16438356" sideWeight="0.47738287" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32876712" sideWeight="0.17770597" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32876712" sideWeight="0.822294" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16438356" sideWeight="0.47415185" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1589041" sideWeight="0.4676898" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.49030694" order="7" side_tool="false" content_ui="tabs" />
@@ -448,91 +492,201 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="9" />
+      <option name="time" value="12" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/codonOpt/Sequence_maker.py">
+    <entry file="file://$PROJECT_DIR$/codonOpt/protein_seqs.fasta" />
+    <entry file="file://$PROJECT_DIR$/codonOpt/tests.py" />
+    <entry file="file://$PROJECT_DIR$/codonOpt/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test notebook.ipynb" />
+    <entry file="file://$PROJECT_DIR$/codonOpt/SeqMake.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="199" column="0" lean-forward="true" selection-start-line="199" selection-start-column="0" selection-end-line="199" selection-end-column="0" />
           <folding>
-            <element signature="e#135#391#0" expanded="false" />
-            <element signature="e#459#862#0" expanded="false" />
-            <element signature="e#901#2503#0" expanded="false" />
+            <element signature="e#0#17#0" expanded="true" />
+            <element signature="e#94#5201#0" expanded="false" />
+            <element signature="e#158#414#0" expanded="false" />
+            <element signature="e#482#885#0" expanded="false" />
+            <element signature="e#924#2526#0" expanded="false" />
+            <element signature="e#2569#5201#0" expanded="false" />
+            <element signature="e#5226#5328#0" expanded="false" />
+            <element signature="e#5375#5932#0" expanded="false" />
+            <element signature="e#5966#7520#0" expanded="false" />
+            <element signature="e#7584#8158#0" expanded="false" />
+            <element signature="e#8206#8875#0" expanded="false" />
+            <element signature="e#8939#9103#0" expanded="false" />
+            <element signature="e#9151#9386#0" expanded="false" />
+            <element signature="e#9226#9361#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/codonOpt/Sequence_maker.py">
+    <entry file="file://$PROJECT_DIR$/codonOpt/SeqMake.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#135#391#0" expanded="false" />
-            <element signature="e#459#862#0" expanded="false" />
-            <element signature="e#901#2503#0" expanded="false" />
+            <element signature="e#0#17#0" expanded="true" />
+            <element signature="e#94#5201#0" expanded="false" />
+            <element signature="e#158#414#0" expanded="false" />
+            <element signature="e#482#885#0" expanded="false" />
+            <element signature="e#924#2526#0" expanded="false" />
+            <element signature="e#2569#5201#0" expanded="false" />
+            <element signature="e#5226#5328#0" expanded="false" />
+            <element signature="e#5375#5932#0" expanded="false" />
+            <element signature="e#5966#7520#0" expanded="false" />
+            <element signature="e#7584#8158#0" expanded="false" />
+            <element signature="e#8206#8875#0" expanded="false" />
+            <element signature="e#8939#9103#0" expanded="false" />
+            <element signature="e#9151#9386#0" expanded="false" />
+            <element signature="e#9226#9361#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/codonOpt/Sequence_maker.py">
+    <entry file="file://$PROJECT_DIR$/codonOpt/SeqMake.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+            <element signature="e#94#5201#0" expanded="false" />
+            <element signature="e#158#414#0" expanded="false" />
+            <element signature="e#482#885#0" expanded="false" />
+            <element signature="e#924#2526#0" expanded="false" />
+            <element signature="e#2569#5201#0" expanded="false" />
+            <element signature="e#5226#5328#0" expanded="false" />
+            <element signature="e#5375#5932#0" expanded="false" />
+            <element signature="e#5966#7520#0" expanded="false" />
+            <element signature="e#7584#8158#0" expanded="false" />
+            <element signature="e#8206#8875#0" expanded="false" />
+            <element signature="e#8939#9103#0" expanded="false" />
+            <element signature="e#9151#9386#0" expanded="false" />
+            <element signature="e#9226#9361#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codonOpt/SeqMake.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1635">
           <caret line="109" column="35" lean-forward="true" selection-start-line="109" selection-start-column="35" selection-end-line="109" selection-end-column="35" />
           <folding>
-            <element signature="e#135#391#0" expanded="false" />
-            <element signature="e#459#862#0" expanded="false" />
-            <element signature="e#901#2503#0" expanded="false" />
+            <element signature="e#0#17#0" expanded="true" />
+            <element signature="e#94#5201#0" expanded="false" />
+            <element signature="e#158#414#0" expanded="false" />
+            <element signature="e#482#885#0" expanded="false" />
+            <element signature="e#924#2526#0" expanded="false" />
+            <element signature="e#2569#5201#0" expanded="false" />
+            <element signature="e#5226#5328#0" expanded="false" />
+            <element signature="e#5375#5932#0" expanded="false" />
+            <element signature="e#5966#7520#0" expanded="false" />
+            <element signature="e#7584#8158#0" expanded="false" />
+            <element signature="e#8206#8875#0" expanded="false" />
+            <element signature="e#8939#9103#0" expanded="false" />
+            <element signature="e#9151#9386#0" expanded="false" />
+            <element signature="e#9226#9361#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/codonOpt/Sequence_maker.py">
+    <entry file="file://$PROJECT_DIR$/codonOpt/SeqMake.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#135#391#0" expanded="false" />
-            <element signature="e#459#862#0" expanded="false" />
-            <element signature="e#901#2503#0" expanded="false" />
+            <element signature="e#0#17#0" expanded="true" />
+            <element signature="e#94#5201#0" expanded="false" />
+            <element signature="e#158#414#0" expanded="false" />
+            <element signature="e#482#885#0" expanded="false" />
+            <element signature="e#924#2526#0" expanded="false" />
+            <element signature="e#2569#5201#0" expanded="false" />
+            <element signature="e#5226#5328#0" expanded="false" />
+            <element signature="e#5375#5932#0" expanded="false" />
+            <element signature="e#5966#7520#0" expanded="false" />
+            <element signature="e#7584#8158#0" expanded="false" />
+            <element signature="e#8206#8875#0" expanded="false" />
+            <element signature="e#8939#9103#0" expanded="false" />
+            <element signature="e#9151#9386#0" expanded="false" />
+            <element signature="e#9226#9361#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/codonOpt/Sequence_maker.py">
+    <entry file="file://$PROJECT_DIR$/codonOpt/SeqMake.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#135#391#0" expanded="false" />
-            <element signature="e#459#862#0" expanded="false" />
-            <element signature="e#901#2503#0" expanded="false" />
+            <element signature="e#0#17#0" expanded="true" />
+            <element signature="e#94#5201#0" expanded="false" />
+            <element signature="e#158#414#0" expanded="false" />
+            <element signature="e#482#885#0" expanded="false" />
+            <element signature="e#924#2526#0" expanded="false" />
+            <element signature="e#2569#5201#0" expanded="false" />
+            <element signature="e#5226#5328#0" expanded="false" />
+            <element signature="e#5375#5932#0" expanded="false" />
+            <element signature="e#5966#7520#0" expanded="false" />
+            <element signature="e#7584#8158#0" expanded="false" />
+            <element signature="e#8206#8875#0" expanded="false" />
+            <element signature="e#8939#9103#0" expanded="false" />
+            <element signature="e#9151#9386#0" expanded="false" />
+            <element signature="e#9226#9361#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/codonOpt/Sequence_maker.py">
+    <entry file="file://$PROJECT_DIR$/codonOpt/SeqMake.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#135#391#0" expanded="false" />
-            <element signature="e#459#862#0" expanded="false" />
-            <element signature="e#901#2503#0" expanded="false" />
+            <element signature="e#0#17#0" expanded="true" />
+            <element signature="e#94#5201#0" expanded="false" />
+            <element signature="e#158#414#0" expanded="false" />
+            <element signature="e#482#885#0" expanded="false" />
+            <element signature="e#924#2526#0" expanded="false" />
+            <element signature="e#2569#5201#0" expanded="false" />
+            <element signature="e#5226#5328#0" expanded="false" />
+            <element signature="e#5375#5932#0" expanded="false" />
+            <element signature="e#5966#7520#0" expanded="false" />
+            <element signature="e#7584#8158#0" expanded="false" />
+            <element signature="e#8206#8875#0" expanded="false" />
+            <element signature="e#8939#9103#0" expanded="false" />
+            <element signature="e#9151#9386#0" expanded="false" />
+            <element signature="e#9226#9361#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/codonOpt/Sequence_maker.py">
+    <entry file="file://$PROJECT_DIR$/codonOpt/SeqMake.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#135#391#0" expanded="false" />
-            <element signature="e#459#862#0" expanded="false" />
-            <element signature="e#901#2503#0" expanded="false" />
+            <element signature="e#0#17#0" expanded="true" />
+            <element signature="e#94#5201#0" expanded="false" />
+            <element signature="e#158#414#0" expanded="false" />
+            <element signature="e#482#885#0" expanded="false" />
+            <element signature="e#924#2526#0" expanded="false" />
+            <element signature="e#2569#5201#0" expanded="false" />
+            <element signature="e#5226#5328#0" expanded="false" />
+            <element signature="e#5375#5932#0" expanded="false" />
+            <element signature="e#5966#7520#0" expanded="false" />
+            <element signature="e#7584#8158#0" expanded="false" />
+            <element signature="e#8206#8875#0" expanded="false" />
+            <element signature="e#8939#9103#0" expanded="false" />
+            <element signature="e#9151#9386#0" expanded="false" />
+            <element signature="e#9226#9361#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -589,50 +743,94 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/codonOpt/Sequence_maker.py">
+    <entry file="file://$PROJECT_DIR$/codonOpt/SeqMake.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#135#391#0" expanded="false" />
-            <element signature="e#459#862#0" expanded="false" />
-            <element signature="e#901#2503#0" expanded="false" />
+            <element signature="e#0#17#0" expanded="true" />
+            <element signature="e#94#5201#0" expanded="false" />
+            <element signature="e#158#414#0" expanded="false" />
+            <element signature="e#482#885#0" expanded="false" />
+            <element signature="e#924#2526#0" expanded="false" />
+            <element signature="e#2569#5201#0" expanded="false" />
+            <element signature="e#5226#5328#0" expanded="false" />
+            <element signature="e#5375#5932#0" expanded="false" />
+            <element signature="e#5966#7520#0" expanded="false" />
+            <element signature="e#7584#8158#0" expanded="false" />
+            <element signature="e#8206#8875#0" expanded="false" />
+            <element signature="e#8939#9103#0" expanded="false" />
+            <element signature="e#9151#9386#0" expanded="false" />
+            <element signature="e#9226#9361#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/codonOpt/Sequence_maker.py">
+    <entry file="file://$PROJECT_DIR$/codonOpt/SeqMake.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#135#391#0" expanded="false" />
-            <element signature="e#459#862#0" expanded="false" />
-            <element signature="e#901#2503#0" expanded="false" />
+            <element signature="e#0#17#0" expanded="true" />
+            <element signature="e#94#5201#0" expanded="false" />
+            <element signature="e#158#414#0" expanded="false" />
+            <element signature="e#482#885#0" expanded="false" />
+            <element signature="e#924#2526#0" expanded="false" />
+            <element signature="e#2569#5201#0" expanded="false" />
+            <element signature="e#5226#5328#0" expanded="false" />
+            <element signature="e#5375#5932#0" expanded="false" />
+            <element signature="e#5966#7520#0" expanded="false" />
+            <element signature="e#7584#8158#0" expanded="false" />
+            <element signature="e#8206#8875#0" expanded="false" />
+            <element signature="e#8939#9103#0" expanded="false" />
+            <element signature="e#9151#9386#0" expanded="false" />
+            <element signature="e#9226#9361#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/codonOpt/Sequence_maker.py">
+    <entry file="file://$PROJECT_DIR$/codonOpt/SeqMake.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#135#391#0" expanded="false" />
-            <element signature="e#459#862#0" expanded="false" />
-            <element signature="e#901#2503#0" expanded="false" />
+            <element signature="e#0#17#0" expanded="true" />
+            <element signature="e#94#5201#0" expanded="false" />
+            <element signature="e#158#414#0" expanded="false" />
+            <element signature="e#482#885#0" expanded="false" />
+            <element signature="e#924#2526#0" expanded="false" />
+            <element signature="e#2569#5201#0" expanded="false" />
+            <element signature="e#5226#5328#0" expanded="false" />
+            <element signature="e#5375#5932#0" expanded="false" />
+            <element signature="e#5966#7520#0" expanded="false" />
+            <element signature="e#7584#8158#0" expanded="false" />
+            <element signature="e#8206#8875#0" expanded="false" />
+            <element signature="e#8939#9103#0" expanded="false" />
+            <element signature="e#9151#9386#0" expanded="false" />
+            <element signature="e#9226#9361#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/codonOpt/Sequence_maker.py">
+    <entry file="file://$PROJECT_DIR$/codonOpt/SeqMake.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#135#391#0" expanded="false" />
-            <element signature="e#459#862#0" expanded="false" />
-            <element signature="e#901#2503#0" expanded="false" />
+            <element signature="e#0#17#0" expanded="true" />
+            <element signature="e#94#5201#0" expanded="false" />
+            <element signature="e#158#414#0" expanded="false" />
+            <element signature="e#482#885#0" expanded="false" />
+            <element signature="e#924#2526#0" expanded="false" />
+            <element signature="e#2569#5201#0" expanded="false" />
+            <element signature="e#5226#5328#0" expanded="false" />
+            <element signature="e#5375#5932#0" expanded="false" />
+            <element signature="e#5966#7520#0" expanded="false" />
+            <element signature="e#7584#8158#0" expanded="false" />
+            <element signature="e#8206#8875#0" expanded="false" />
+            <element signature="e#8939#9103#0" expanded="false" />
+            <element signature="e#9151#9386#0" expanded="false" />
+            <element signature="e#9226#9361#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -649,86 +847,163 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test notebook.ipynb" />
-    <entry file="file://$PROJECT_DIR$/codonOpt/Sequence_maker.py">
+    <entry file="file://$PROJECT_DIR$/codonOpt/SeqMake.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="348">
           <caret line="199" column="0" lean-forward="true" selection-start-line="199" selection-start-column="0" selection-end-line="199" selection-end-column="0" />
           <folding>
-            <element signature="e#135#391#0" expanded="false" />
-            <element signature="e#459#862#0" expanded="false" />
-            <element signature="e#901#2503#0" expanded="false" />
+            <element signature="e#0#17#0" expanded="true" />
+            <element signature="e#94#5201#0" expanded="false" />
+            <element signature="e#158#414#0" expanded="false" />
+            <element signature="e#482#885#0" expanded="false" />
+            <element signature="e#924#2526#0" expanded="false" />
+            <element signature="e#2569#5201#0" expanded="false" />
+            <element signature="e#5226#5328#0" expanded="false" />
+            <element signature="e#5375#5932#0" expanded="false" />
+            <element signature="e#5966#7520#0" expanded="false" />
+            <element signature="e#7584#8158#0" expanded="false" />
+            <element signature="e#8206#8875#0" expanded="false" />
+            <element signature="e#8939#9103#0" expanded="false" />
+            <element signature="e#9151#9386#0" expanded="false" />
+            <element signature="e#9226#9361#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/codonOpt/Sequence_maker.py">
+    <entry file="file://$PROJECT_DIR$/codonOpt/SeqMake.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#135#391#0" expanded="false" />
-            <element signature="e#459#862#0" expanded="false" />
-            <element signature="e#901#2503#0" expanded="false" />
+            <element signature="e#0#17#0" expanded="true" />
+            <element signature="e#94#5201#0" expanded="false" />
+            <element signature="e#158#414#0" expanded="false" />
+            <element signature="e#482#885#0" expanded="false" />
+            <element signature="e#924#2526#0" expanded="false" />
+            <element signature="e#2569#5201#0" expanded="false" />
+            <element signature="e#5226#5328#0" expanded="false" />
+            <element signature="e#5375#5932#0" expanded="false" />
+            <element signature="e#5966#7520#0" expanded="false" />
+            <element signature="e#7584#8158#0" expanded="false" />
+            <element signature="e#8206#8875#0" expanded="false" />
+            <element signature="e#8939#9103#0" expanded="false" />
+            <element signature="e#9151#9386#0" expanded="false" />
+            <element signature="e#9226#9361#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/codonOpt/Sequence_maker.py">
+    <entry file="file://$PROJECT_DIR$/codonOpt/SeqMake.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1635">
           <caret line="109" column="35" lean-forward="true" selection-start-line="109" selection-start-column="35" selection-end-line="109" selection-end-column="35" />
           <folding>
-            <element signature="e#135#391#0" expanded="false" />
-            <element signature="e#459#862#0" expanded="false" />
-            <element signature="e#901#2503#0" expanded="false" />
+            <element signature="e#0#17#0" expanded="true" />
+            <element signature="e#94#5201#0" expanded="false" />
+            <element signature="e#158#414#0" expanded="false" />
+            <element signature="e#482#885#0" expanded="false" />
+            <element signature="e#924#2526#0" expanded="false" />
+            <element signature="e#2569#5201#0" expanded="false" />
+            <element signature="e#5226#5328#0" expanded="false" />
+            <element signature="e#5375#5932#0" expanded="false" />
+            <element signature="e#5966#7520#0" expanded="false" />
+            <element signature="e#7584#8158#0" expanded="false" />
+            <element signature="e#8206#8875#0" expanded="false" />
+            <element signature="e#8939#9103#0" expanded="false" />
+            <element signature="e#9151#9386#0" expanded="false" />
+            <element signature="e#9226#9361#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/codonOpt/Sequence_maker.py">
+    <entry file="file://$PROJECT_DIR$/codonOpt/SeqMake.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#135#391#0" expanded="false" />
-            <element signature="e#459#862#0" expanded="false" />
-            <element signature="e#901#2503#0" expanded="false" />
+            <element signature="e#0#17#0" expanded="true" />
+            <element signature="e#94#5201#0" expanded="false" />
+            <element signature="e#158#414#0" expanded="false" />
+            <element signature="e#482#885#0" expanded="false" />
+            <element signature="e#924#2526#0" expanded="false" />
+            <element signature="e#2569#5201#0" expanded="false" />
+            <element signature="e#5226#5328#0" expanded="false" />
+            <element signature="e#5375#5932#0" expanded="false" />
+            <element signature="e#5966#7520#0" expanded="false" />
+            <element signature="e#7584#8158#0" expanded="false" />
+            <element signature="e#8206#8875#0" expanded="false" />
+            <element signature="e#8939#9103#0" expanded="false" />
+            <element signature="e#9151#9386#0" expanded="false" />
+            <element signature="e#9226#9361#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/codonOpt/Sequence_maker.py">
+    <entry file="file://$PROJECT_DIR$/codonOpt/SeqMake.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#135#391#0" expanded="false" />
-            <element signature="e#459#862#0" expanded="false" />
-            <element signature="e#901#2503#0" expanded="false" />
+            <element signature="e#0#17#0" expanded="true" />
+            <element signature="e#94#5201#0" expanded="false" />
+            <element signature="e#158#414#0" expanded="false" />
+            <element signature="e#482#885#0" expanded="false" />
+            <element signature="e#924#2526#0" expanded="false" />
+            <element signature="e#2569#5201#0" expanded="false" />
+            <element signature="e#5226#5328#0" expanded="false" />
+            <element signature="e#5375#5932#0" expanded="false" />
+            <element signature="e#5966#7520#0" expanded="false" />
+            <element signature="e#7584#8158#0" expanded="false" />
+            <element signature="e#8206#8875#0" expanded="false" />
+            <element signature="e#8939#9103#0" expanded="false" />
+            <element signature="e#9151#9386#0" expanded="false" />
+            <element signature="e#9226#9361#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/codonOpt/Sequence_maker.py">
+    <entry file="file://$PROJECT_DIR$/codonOpt/SeqMake.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#135#391#0" expanded="false" />
-            <element signature="e#459#862#0" expanded="false" />
-            <element signature="e#901#2503#0" expanded="false" />
+            <element signature="e#0#17#0" expanded="true" />
+            <element signature="e#94#5201#0" expanded="false" />
+            <element signature="e#158#414#0" expanded="false" />
+            <element signature="e#482#885#0" expanded="false" />
+            <element signature="e#924#2526#0" expanded="false" />
+            <element signature="e#2569#5201#0" expanded="false" />
+            <element signature="e#5226#5328#0" expanded="false" />
+            <element signature="e#5375#5932#0" expanded="false" />
+            <element signature="e#5966#7520#0" expanded="false" />
+            <element signature="e#7584#8158#0" expanded="false" />
+            <element signature="e#8206#8875#0" expanded="false" />
+            <element signature="e#8939#9103#0" expanded="false" />
+            <element signature="e#9151#9386#0" expanded="false" />
+            <element signature="e#9226#9361#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/codonOpt/Sequence_maker.py">
+    <entry file="file://$PROJECT_DIR$/codonOpt/SeqMake.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#135#391#0" expanded="false" />
-            <element signature="e#459#862#0" expanded="false" />
-            <element signature="e#901#2503#0" expanded="false" />
+            <element signature="e#0#17#0" expanded="true" />
+            <element signature="e#94#5201#0" expanded="false" />
+            <element signature="e#158#414#0" expanded="false" />
+            <element signature="e#482#885#0" expanded="false" />
+            <element signature="e#924#2526#0" expanded="false" />
+            <element signature="e#2569#5201#0" expanded="false" />
+            <element signature="e#5226#5328#0" expanded="false" />
+            <element signature="e#5375#5932#0" expanded="false" />
+            <element signature="e#5966#7520#0" expanded="false" />
+            <element signature="e#7584#8158#0" expanded="false" />
+            <element signature="e#8206#8875#0" expanded="false" />
+            <element signature="e#8939#9103#0" expanded="false" />
+            <element signature="e#9151#9386#0" expanded="false" />
+            <element signature="e#9226#9361#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -778,21 +1053,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/codonOpt/test/tests.py">
+    <entry file="file://$PROJECT_DIR$/codonOpt/example_data/protein_seqs2.fasta">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        <state relative-caret-position="15">
+          <caret line="1" column="29" lean-forward="true" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/codonOpt/Sequence_maker.py">
+    <entry file="file://$PROJECT_DIR$/codonOpt/test/tests.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="66" column="58" lean-forward="false" selection-start-line="66" selection-start-column="58" selection-end-line="66" selection-end-column="58" />
+        <state relative-caret-position="213">
+          <caret line="144" column="0" lean-forward="true" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
           <folding>
-            <element signature="e#135#391#0" expanded="false" />
-            <element signature="e#459#862#0" expanded="false" />
-            <element signature="e#901#2503#0" expanded="false" />
+            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#176#3000#0" expanded="false" />
+            <element signature="e#201#796#0" expanded="false" />
+            <element signature="e#844#1027#0" expanded="false" />
+            <element signature="e#1084#1365#0" expanded="false" />
+            <element signature="e#1429#1553#0" expanded="false" />
+            <element signature="e#1631#1871#0" expanded="false" />
+            <element signature="e#1953#2129#0" expanded="false" />
+            <element signature="e#2209#2542#0" expanded="false" />
+            <element signature="e#2616#3000#0" expanded="false" />
+            <element signature="e#3052#5304#0" expanded="false" />
+            <element signature="e#3077#3948#0" expanded="false" />
+            <element signature="e#4023#4201#0" expanded="false" />
+            <element signature="e#4261#4377#0" expanded="false" />
+            <element signature="e#4442#4495#0" expanded="false" />
+            <element signature="e#4571#5304#0" expanded="false" />
+            <element signature="e#5370#6248#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codonOpt/SeqMake.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="228" column="8" lean-forward="false" selection-start-line="228" selection-start-column="8" selection-end-line="228" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+            <element signature="e#94#5201#0" expanded="false" />
+            <element signature="e#158#414#0" expanded="false" />
+            <element signature="e#482#885#0" expanded="false" />
+            <element signature="e#924#2526#0" expanded="false" />
+            <element signature="e#2569#5201#0" expanded="false" />
+            <element signature="e#5226#5328#0" expanded="false" />
+            <element signature="e#5375#5932#0" expanded="false" />
+            <element signature="e#5966#7520#0" expanded="false" />
+            <element signature="e#7584#8158#0" expanded="false" />
+            <element signature="e#8206#8875#0" expanded="false" />
+            <element signature="e#8939#9103#0" expanded="false" />
+            <element signature="e#9151#9386#0" expanded="false" />
+            <element signature="e#9226#9361#0" expanded="false" />
           </folding>
         </state>
       </provider>
