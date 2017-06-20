@@ -7,16 +7,18 @@ import logging
 
 
 
-class SeqMake_CheckerFunctions_tests(unittest.TestCase):
+class SeqMake_Functions_tests(unittest.TestCase):
 
     def setUp(self):
         self.correct_protein_seq = "vgfENPqmkTSWardLYHic*"
         self.incorrect_protein_seq = "vgfENPqmkTSWardLYHic*123]["
-        self.example_dna_seq = 'AGTTAGGCCTGCCTTATATTACCAAGGGCACAGTGAGGTAACCCCCCGGTAAAGTCGTTCAGACACACATAAGTCCATGAGGCGATTGTTGAACGATTGGATGTGGACTGTACGGCTCCTTTTAGCTCTCTATCACAAGGAGGCATGACCCGTCTCAAACGGAATACTCTGTGGTATTACCGCTCCGGGATC'
-        self.example_protein_seq = 'S*ACLILPRAQ*GNPPVKSFRHT*VHEAIVERLDVDCTAPFSSLSQGGMTRLKRNTLWYYRSGI'
-        self.example_protein_seq_different = 'PRAQ*GNPPKSFRHT*VHEALDVDCTAPFSSLSQGGMLKRNTLWYYRSGI'
+        self.example_dna_seq = 'agtTAGGCCTGCCTTATATTACCAAGGGCACAGTGAGGTAACCCCCCGGTAAAGTCGTTCAGACACACATAAGTCCATGAGGCGATTGTTGAACGATTGGATGTGGACTGTACGGCTCCTTTTAGCTCTCTATCACAAGGAGGCATGACCCGTCTCAAACGGAATACTCTGTGGTATTACCGCTCCGGGATC'
+        self.example_protein_seq = 's*ACLILPRAQ*GNPPVKSFRHT*VHEAIVERLDVDCTAPFSSLSQGGMTRLKRNTLWYYRSGI'
+        self.example_protein_seq_different = 'pRAQ*GNPPKSFRHT*VHEALDVDCTAPFSSLSQGGMLKRNTLWYYRSGI'
 
         self.test_seq = codonOpt.SeqMake.Sequence()
+
+        self.input_dir = 'example_data/'
 
     def test_check_protein_seq(self):
         ''' Test that check protein sequence function passes proteins containing correct amino acids '''
@@ -31,9 +33,9 @@ class SeqMake_CheckerFunctions_tests(unittest.TestCase):
     def test_translate_can_translate_correctly(self):
         translated = codonOpt.SeqMake.translate(self.example_dna_seq)
 
-        self.assertEqual(translated,self.example_protein_seq)
+        self.assertEqual(translated,self.example_protein_seq.upper())
 
-    def test_that_check_dna_back_translation_picks_up_error(self):
+    def test_that_checks_dna_back_translation_picks_up_error(self):
 
         with ShouldRaise(NameError('Translation of dna seq to protein seq does not give the original protein seq')):
             self.assertFalse(codonOpt.SeqMake.check_dna_back_translation(self.example_dna_seq, self.example_protein_seq_different))
@@ -45,7 +47,7 @@ class SeqMake_CheckerFunctions_tests(unittest.TestCase):
 
     def test_import_protein_seqs_returns_list_SequenceObjects(self):
 
-        list_seqs = codonOpt.SeqMake.import_protein_seqs('example_data/protein_seqs.fasta', 'fasta')
+        list_seqs = codonOpt.SeqMake.import_protein_seqs(self.input_dir, 'protein_seqs.fasta', 'fasta')
 
         passed = True
 
@@ -57,7 +59,7 @@ class SeqMake_CheckerFunctions_tests(unittest.TestCase):
 
     def test_import_protein_seqs_gets_name_and_sequence(self):
 
-        list_seqs = codonOpt.SeqMake.import_protein_seqs('example_data/protein_seqs2.fasta', 'fasta')
+        list_seqs = codonOpt.SeqMake.import_protein_seqs(self.input_dir, 'protein_seqs2.fasta', 'fasta')
 
         passed = True
 
@@ -69,11 +71,11 @@ class SeqMake_CheckerFunctions_tests(unittest.TestCase):
 
         self.assertTrue(passed, 'Function import_protein_seqs import names and/or sequences')
 
-
 class SeqMake_test_case(unittest.TestCase):
 
     def setUp(self):
-        self.codon_table = codonOpt.SeqMake.CodonTable(json_file_path='example_data/Tth codon table.json', low_cuttoff=0.1)
+        self.ct_dir = 'example_data/'
+        self.codon_table = codonOpt.SeqMake.CodonTable(codon_tables_dir=self.ct_dir, json_file='Tth codon table.json', low_cuttoff=0.1)
         self.protein_seq = "MravVFENKERVAVKevnaPRLQHPLDALVRVHLAGICGSDLHLYHGKIPVLPGSVLGHEFVGQVEAVGEGIQDLQPGDWVVGPFHIACGTCPYCRRHQYNLCERGGVYGYGPMFGNLQGAQAEILRVPFSNVNLRKLPPNLSPERAIFAGDILSTAYGGLIQGQLRPGDSVAVIGAGPVGLMAIEVAQVLGASKILAIDRIPERLERAASLGAIPINAEQENPVRRVRSETNDEGPDLVLEAVGGAATLSLALEMVRPGGRVSAVGVDNAPSFPFPLASGLVKDLTFRIGLANVHLYIDAVLALLASGRLQPERIVSHYLPLEEAPRGYELFDRKEALKVLLVVRGGGSGDYKDDDDK**"
         self.dna_seq = codonOpt.SeqMake.generate_seq(self.protein_seq, self.codon_table.lea_codon_dict)
 
@@ -124,8 +126,10 @@ class SeqMake_test_case(unittest.TestCase):
 class SeqMake_multipleSeqObjs_testcase(unittest.TestCase):
 
     def setUp(self):
-        self.list_seqs = codonOpt.SeqMake.import_protein_seqs('example_data/protein_seqs.fasta', 'fasta')
-        self.codon_table = codonOpt.SeqMake.CodonTable(json_file_path='example_data/Tth codon table.json', low_cuttoff=0.1)
+        self.input_dir = 'example_data/'
+        self.ct_dir = 'example_data/'
+        self.list_seqs = codonOpt.SeqMake.import_protein_seqs(self.input_dir, 'protein_seqs.fasta', 'fasta')
+        self.codon_table = codonOpt.SeqMake.CodonTable(codon_tables_dir=self.ct_dir, json_file='Tth codon table.json', low_cuttoff=0.1)
         self.dna_seqs = codonOpt.SeqMake.codon_optimise_seq_list(self.list_seqs, self.codon_table.lea_codon_dict)
 
     def test_codon_optimise_seq_list_dnalen(self):
@@ -141,6 +145,11 @@ class SeqMake_multipleSeqObjs_testcase(unittest.TestCase):
                 passed = False
 
         self.assertTrue(passed, 'Imported list of sequences which has then been codon optimised cannot be back translated from dna')
+
+    def test_dna_output_as_fasta(self):
+        pass
+
+
 
 
 

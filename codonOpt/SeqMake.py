@@ -6,19 +6,19 @@ from Bio import SeqIO
 
 class CodonTable():
 
-    def __init__(self, json_file_path='', low_cuttoff=0.0):
+    def __init__(self, codon_tables_dir = '', json_file='', low_cuttoff=0.0):
         self.codon_dict = {}
         self.lea_codon_dict = {}
         self.low_cuttoff = low_cuttoff
 
-        if json_file_path != '':
-            self.load_codon_table_from_json(json_file_path)
+        if json_file != '':
+            self.load_codon_table_from_json(codon_tables_dir, json_file)
             self.load_lea_dict()
             self.check_codon_table()
 
-    def load_codon_table_from_json(self, json_file_path):
+    def load_codon_table_from_json(self, codon_tables_dir, json_file):
         # Open to codon table json.
-        with open(json_file_path, 'r') as fp:
+        with open(codon_tables_dir+json_file, 'r') as fp:
             self.codon_dict = json.load(fp)
 
         # Make nested dicts from json into dicts
@@ -26,7 +26,7 @@ class CodonTable():
             self.codon_dict[aa] = dict(self.codon_dict[aa])
 
         # Logging
-        logging.info('Loaded codon dict from json at: ' + str(json_file_path))
+        logging.info('Loaded codon dict from json at: ' + str(codon_tables_dir + json_file))
         logging.info(str(self.codon_dict))
 
     def load_lea_dict(self):
@@ -160,6 +160,7 @@ def translate(dna_seq):
                         "GTA":"V", "GTT":"V", "GTC":"V", "GTG":"V"}
 
         translated = ""
+        dna_seq = dna_seq.upper()
         dna_length = len(dna_seq)
         for i in range(0,dna_length,3):
             triplet = dna_seq[i:i+3]
@@ -169,6 +170,9 @@ def translate(dna_seq):
 
 def check_dna_back_translation(dna_seq, protein_seq):
         logging.debug('Checking translation back to protein sequence matches...')
+
+        dna_seq = dna_seq.upper()
+        protein_seq = protein_seq.upper()
 
         translated = translate(dna_seq)
         if translated != protein_seq:
@@ -181,6 +185,7 @@ def check_dna_back_translation(dna_seq, protein_seq):
 
         logging.debug('Passed')
         return True
+
 
 def generate_seq(protein_seq, lea_dict):
 
@@ -199,7 +204,7 @@ def generate_seq(protein_seq, lea_dict):
         dna_seq += lea_dict[aa].random()
 
     # Log new DNA sequence
-    logging.info('DNA Seq Generated: ' + str(dna_seq))
+    logging.debug('DNA Seq Generated: ' + str(dna_seq))
 
     # Check that the new DNA sequence can be translated back to the same protein sequence
     check_dna_back_translation(dna_seq, protein_seq)
@@ -214,10 +219,11 @@ def codon_optimise_seq_list(sequence_obj_list, lea_dict):
 
     return dna_seqs
 
-def import_protein_seqs(file, file_type):
+
+def import_protein_seqs(location, file, file_type):
     list_of_seqs = []
 
-    for record in SeqIO.parse(file, file_type):
+    for record in SeqIO.parse(location+file, file_type):
         seq_obj = Sequence()
         seq_obj.seq_name = record.id
         seq_obj.protein_seq = record.seq
@@ -225,8 +231,15 @@ def import_protein_seqs(file, file_type):
 
     return list_of_seqs
 
-def output_sequence_list_as_fasta(file_name, location, sequence_list):
-    pass
+def output_dna_sequence_list_as_fasta(location_output, file_name_output, sequence_list):
+
+    file = open(location_output + file_name_output, 'w')
+
+    for seq in sequence_list:
+        file.write('\n' + '>'+ seq.seq_name)
+        file.write('\n' + seq.dna_seq + '\n')
+
+
 
 
 
@@ -234,19 +247,27 @@ def output_sequence_list_as_fasta(file_name, location, sequence_list):
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO)
 
-    # Protein sequence for testing...
+    # Test individual sequence optimisation
+    codon_tables_dir = 'example_data/'
+
+    codon_table = CodonTable(codon_tables_dir=codon_tables_dir, json_file='Tth codon table.json', low_cuttoff=0.1)
     a_protein = "MRAVVFENKERVAVKEVNAPRLQHPLDALVRVHLAGICGSDLHLYHGKIPVLPGSVLGHEFVGQVEAVGEGIQDLQPGDWVVGPFHIACGTCPYCRRHQYNLCERGGVYGYGPMFGNLQGAQAEILRVPFSNVNLRKLPPNLSPERAIFAGDILSTAYGGLIQGQLRPGDSVAVIGAGPVGLMAIEVAQVLGASKILAIDRIPERLERAASLGAIPINAEQENPVRRVRSETNDEGPDLVLEAVGGAATLSLALEMVRPGGRVSAVGVDNAPSFPFPLASGLVKDLTFRIGLANVHLYIDAVLALLASGRLQPERIVSHYLPLEEAPRGYELFDRKEALKVLLVVRGGGSGDYKDDDDK**"
-    sequences = import_protein_seqs('example_data/protein_seqs.fasta', 'fasta')
-
-    codon_table = CodonTable(json_file_path='example_data/Tth codon table.json', low_cuttoff=0.1)
-
     seq = generate_seq(a_protein, codon_table.lea_codon_dict)
 
-    codon_optimise_seq_list(sequences, codon_table.lea_codon_dict)
 
+
+    # Test importing set of fasta sequences and exporting optimised dna sequences
+    input_dir = 'example_data/'
+    output_dir = 'example_data/'
+    codon_tables_dir = 'example_data/'
+
+    codon_table = CodonTable(codon_tables_dir=codon_tables_dir, json_file='Tth codon table.json', low_cuttoff=0.1)
+    sequences = import_protein_seqs(input_dir, 'protein_seqs.fasta', 'fasta')
+    codon_optimise_seq_list(sequences, codon_table.lea_codon_dict)
     for sequence in sequences:
         print()
         print(sequence.seq_name)
         print(sequence.dna_seq)
+    output_dna_sequence_list_as_fasta(output_dir, 'test_dna.fasta', sequences)
 
 
