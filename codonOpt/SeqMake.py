@@ -2,9 +2,25 @@ from lea import *
 import logging
 import json
 from Bio import SeqIO
+from codonOpt.global_vars import DNA_to_aa, amino_acids_list, empty_codon_table
 
+# TODO comment everything, research docstrings
+# TODO make it work on the command line
+# TODO Make a new module for making json codon table from a genome.
+# TODO Optimise from DNA
 
 class CodonTable():
+    """
+    This is the CodonTable Class
+    It has codon_dict, lea_codon_dict and low_cuttoff variables.
+
+    When initialising it takes the following arguments:
+        codon_tables_dir = "" - This is the directory to find the codon table json file.
+        json_file = "" - This is the json file containing the codon usage information.
+        low_cuttoff = 0 - This is the lowcuttoff which is used to remove codons with low frequency
+
+
+    """
 
     def __init__(self, codon_tables_dir = '', json_file='', low_cuttoff=0.0):
         self.codon_dict = {}
@@ -65,29 +81,7 @@ class CodonTable():
 
         logging.debug(str(self.lea_codon_dict))
 
-    def check_codon_table(self):
-        test_codon_table = {"V": {"GTT": 0.031, "GTG": 0.6156, "GTC": 0.3363, "GTA": 0.017},
-                              "G": {"GGC": 0.3996, "GGA": 0.0609, "GGG": 0.5145, "GGT": 0.025},
-                              "F": {"TTT": 0.177, "TTC": 0.823},
-                              "E": {"GAA": 0.125, "GAG": 0.875},
-                              "N": {"AAT": 0.027, "AAC": 0.973},
-                              "P": {"CCT": 0.068, "CCA": 0.023, "CCG": 0.176, "CCC": 0.733},
-                              "Q": {"CAA": 0.13, "CAG": 0.87},
-                              "M": {"ATG": 1.0},
-                              "K": {"AAG": 0.915, "AAA": 0.085},
-                              "T": {"ACT": 0.012, "ACC": 0.7267, "ACA": 0.011, "ACG": 0.2503},
-                              "S": {"TCT": 0.024, "TCC": 0.4464, "AGT": 0.011, "TCA": 0.009, "TCG": 0.1101, "AGC": 0.3994},
-                              "W": {"TGG": 1.0},
-                              "A": {"GCG": 0.2268, "GCC": 0.7323, "GCA": 0.017, "GCT": 0.024},
-                              "R": {"CGG": 0.4264, "CGC": 0.3403, "AGG": 0.1892, "CGA": 0.015, "AGA": 0.01, "CGT": 0.019},
-                              "D": {"GAT": 0.048, "GAC": 0.952},
-                              "L": {"TTA": 0.008, "CTA": 0.022, "CTT": 0.114, "CTC": 0.505, "CTG": 0.285, "TTG": 0.066},
-                              "Y": {"TAT": 0.043, "TAC": 0.957},
-                              "H": {"CAC": 0.95, "CAT": 0.05},
-                              "I": {"ATC": 0.86, "ATA": 0.046, "ATT": 0.094},
-                              "C": {"TGC": 0.95, "TGT": 0.05},
-                              "*": {"TAG": 0.3676, "TAA": 0.1948, "TGA": 0.4376}}
-
+    def check_codon_table(self, test_codon_table=empty_codon_table):
         test_pass = True
         logging.debug('Checking codon table uses correct triplets...')
         for aa in self.codon_dict:
@@ -113,14 +107,14 @@ class CodonTable():
 class Sequence():
 
     def __init__(self):
+        self.original_dna_seq = ''
         self.dna_seq = ''
         self.protein_seq = ''
         self.seq_name = ''
 
-
-def check_protein_seq(protein_seq):
+# -- Functions for checking sequences are correct --
+def check_protein_seq(protein_seq, amino_acids=amino_acids_list):
         logging.debug('Checking protein sequence is valid...')
-        amino_acids = ['V', 'G', 'F', 'E', 'N', 'P', 'Q', 'M', 'K', 'T', 'S', 'W', 'A', 'R', 'D', 'L', 'Y', 'H', 'I', 'C', '*']
 
         protein_seq = protein_seq.upper()
         for aa in protein_seq:
@@ -134,34 +128,16 @@ def check_protein_seq(protein_seq):
 
         return True
 
-def translate(dna_seq):
-        # This function will translate a DNA sequence to a protein sequence using the dna_to_aa_table
-        DNA_to_aa = {
-                        "GCT":"A", "GCG":"A", "GCC":"A", "GCA":"A",
-                        "AGA":"R", "CGA":"R", "CGT":"R", "AGG":"R", "CGC":"R", "CGG":"R",
-                        "AAT":"N", "AAC":"N",
-                        "GAT":"D", "GAC":"D",
-                        "TGT":"C", "TGC":"C",
-                        "TAA":"*", "TAG":"*", "TGA":"*",
-                        "CAA":"Q", "CAG":"Q",
-                        "GAA":"E", "GAG":"E",
-                        "GGT":"G", "GGA":"G", "GGC":"G", "GGG":"G",
-                        "CAT":"H", "CAC":"H",
-                        "ATA":"I", "ATT":"I", "ATC":"I",
-                        "TTA":"L", "TTG":"L", "CTT":"L", "CTG":"L", "CTC":"L", "CTA":"L",
-                        "AAA":"K", "AAG":"K",
-                        "ATG":"M",
-                        "TTT":"F", "TTC":"F",
-                        "CCA":"P", "CCT":"P", "CCG":"P", "CCC":"P",
-                        "TCA":"S", "AGT":"S", "TCT":"S", "TCG":"S", "AGC":"S", "TCC":"S",
-                        "ACA":"T", "ACT":"T", "ACG":"T", "ACC":"T",
-                        "TGG":"W",
-                        "TAT":"Y", "TAC":"Y",
-                        "GTA":"V", "GTT":"V", "GTC":"V", "GTG":"V"}
+def translate(dna_seq, DNA_to_aa = DNA_to_aa):
+        """This function will translate a DNA sequence to a protein sequence using the dna_to_aa_table"""
 
         translated = ""
         dna_seq = dna_seq.upper()
         dna_length = len(dna_seq)
+
+        if (dna_length%3) != 0:
+            raise NameError('DNA Sequence to be translated is not divisable by 3')
+
         for i in range(0,dna_length,3):
             triplet = dna_seq[i:i+3]
             aa = DNA_to_aa.get(triplet)
@@ -186,7 +162,7 @@ def check_dna_back_translation(dna_seq, protein_seq):
         logging.debug('Passed')
         return True
 
-
+# -- Functions to generate new codon optimised DNA from a protein sequence --
 def generate_seq(protein_seq, lea_dict):
 
     # Make protein_seq all uppercase
@@ -219,7 +195,7 @@ def codon_optimise_seq_list(sequence_obj_list, lea_dict):
 
     return dna_seqs
 
-
+# -- Functions to import/output sequences
 def import_protein_seqs(location, file, file_type):
     list_of_seqs = []
 
@@ -231,6 +207,7 @@ def import_protein_seqs(location, file, file_type):
 
     return list_of_seqs
 
+# This function needs a test
 def output_dna_sequence_list_as_fasta(location_output, file_name_output, sequence_list):
 
     file = open(location_output + file_name_output, 'w')
@@ -244,8 +221,11 @@ def output_dna_sequence_list_as_fasta(location_output, file_name_output, sequenc
 
 
 
+
 if __name__ == "__main__":
-    logging.basicConfig(level=logging.INFO)
+    """ For testing this module """
+
+    logging.basicConfig(level=logging.DEBUG)
 
     # Test individual sequence optimisation
     codon_tables_dir = 'example_data/'
@@ -254,14 +234,12 @@ if __name__ == "__main__":
     a_protein = "MRAVVFENKERVAVKEVNAPRLQHPLDALVRVHLAGICGSDLHLYHGKIPVLPGSVLGHEFVGQVEAVGEGIQDLQPGDWVVGPFHIACGTCPYCRRHQYNLCERGGVYGYGPMFGNLQGAQAEILRVPFSNVNLRKLPPNLSPERAIFAGDILSTAYGGLIQGQLRPGDSVAVIGAGPVGLMAIEVAQVLGASKILAIDRIPERLERAASLGAIPINAEQENPVRRVRSETNDEGPDLVLEAVGGAATLSLALEMVRPGGRVSAVGVDNAPSFPFPLASGLVKDLTFRIGLANVHLYIDAVLALLASGRLQPERIVSHYLPLEEAPRGYELFDRKEALKVLLVVRGGGSGDYKDDDDK**"
     seq = generate_seq(a_protein, codon_table.lea_codon_dict)
 
-
-
     # Test importing set of fasta sequences and exporting optimised dna sequences
     input_dir = 'example_data/'
     output_dir = 'example_data/'
     codon_tables_dir = 'example_data/'
 
-    codon_table = CodonTable(codon_tables_dir=codon_tables_dir, json_file='Tth codon table.json', low_cuttoff=0.1)
+    codon_table = CodonTable(codon_tables_dir=codon_tables_dir, json_file='NC_000913.3.json', low_cuttoff=0.1)
     sequences = import_protein_seqs(input_dir, 'protein_seqs.fasta', 'fasta')
     codon_optimise_seq_list(sequences, codon_table.lea_codon_dict)
     for sequence in sequences:
@@ -269,5 +247,7 @@ if __name__ == "__main__":
         print(sequence.seq_name)
         print(sequence.dna_seq)
     output_dna_sequence_list_as_fasta(output_dir, 'test_dna.fasta', sequences)
+
+
 
 
