@@ -1,5 +1,5 @@
 __author__ = 'Will'
 
-from codonOpt import SeqMake
+from codonOpt.SeqMake import CodonTable, Sequence_Generator
 
 
