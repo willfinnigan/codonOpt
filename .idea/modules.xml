@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$USER_HOME$/Dropbox/Python/Codon optimisation/Ver 1.1/.idea/Codon Optimisation WF.iml" filepath="$USER_HOME$/Dropbox/Python/Codon optimisation/Ver 1.1/.idea/Codon Optimisation WF.iml" />
       <module fileurl="file://$USER_HOME$/PycharmProjects/Codon usage/.idea/Codon usage.iml" filepath="$USER_HOME$/PycharmProjects/Codon usage/.idea/Codon usage.iml" />
-      <module fileurl="file://$USER_HOME$/codon_optimiser/codon_optimiser_project/Genome_tools/.idea/Genome_tools.iml" filepath="$USER_HOME$/codon_optimiser/codon_optimiser_project/Genome_tools/.idea/Genome_tools.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/codonOpt.iml" filepath="$PROJECT_DIR$/.idea/codonOpt.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../codonOpt_data/.idea/codonOpt_data.iml" filepath="$PROJECT_DIR$/../../codonOpt_data/.idea/codonOpt_data.iml" />
     </modules>
   </component>
 </project>
