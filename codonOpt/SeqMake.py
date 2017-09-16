@@ -2,8 +2,8 @@ from lea import *
 import logging, random, json
 
 from codonOpt.global_vars import empty_codon_table
-from codonOpt.RedesignTools import MotifFinder, GCTools, MFE
-from codonOpt.RedesignTools.GeneralFunctions import return_window_in_frame, translate, check_protein_seq, check_dna_back_translation
+from codonOpt.AnalysisRedesignTools import MotifFinder, GCTools, MFE
+from codonOpt.AnalysisRedesignTools.GeneralFunctions import return_window_in_frame, translate, check_protein_seq, check_dna_back_translation
 
 """SeqMake Module.
 
@@ -235,7 +235,7 @@ class Sequence_Generator:
 
         return dna_seq
 
-    def minimise_mfe_five_prime(self, dna_seq, energy_limit, five_prime_length=30, max_iterations=100):
+    def minimise_mfe_five_prime(self, dna_seq, energy_limit, five_prime_length=20, max_iterations=100):
 
         dna_seq = MFE.minimise_mfe(dna_seq, 0, five_prime_length, self, energy_limit, iterations=max_iterations)
         return dna_seq
@@ -266,6 +266,13 @@ if __name__ == "__main__":
     dna_seq = seq_gen.minimise_mfe_five_prime(dna_seq, -5)
 
     print('Finished')
+
+    # Codon context
+    # Sequential codons
+    # NGG codons
+    # SD sites
+
+    
 
 
 

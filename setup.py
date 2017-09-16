@@ -10,5 +10,5 @@ setup(
     author_email='wjafinnigan@gmail.com',
     description='A package for codon optimisation',
     download_url = 'https://github.com/willfinnigan/codonOpt/archive/0.1.tar.gz', # I'll explain this in a second
-    keywords = ['DNA', 'Codon Optimisation', 'Gene Design'], # arbitrary keywords
+    keywords = ['DNA', 'Codon Optimisation', 'Gene Design'] # arbitrary keywords
 )

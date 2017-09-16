@@ -7,5 +7,7 @@
     <orderEntry type="module" module-name="Codon usage" />
     <orderEntry type="module" module-name="codonOpt_data" />
     <orderEntry type="module" module-name="Codon Optimisation WF" />
+    <orderEntry type="module" module-name="Codon Optimisation WF" />
+    <orderEntry type="module" module-name="codonOpt_data" />
   </component>
 </module>

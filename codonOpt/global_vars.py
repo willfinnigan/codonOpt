@@ -1,4 +1,5 @@
 
+
 DNA_to_aa = {
     "GCT" :"A", "GCG" :"A", "GCC" :"A", "GCA" :"A",
     "AGA" :"R", "CGA" :"R", "CGT" :"R", "AGG" :"R", "CGC" :"R", "CGG" :"R",
@@ -90,6 +91,7 @@ triplets_only_table = total = {"GCT" : 0, "GCG" : 0, "GCC" : 0, "GCA": 0,
             "TGG" : 0,
             "TAT" : 0, "TAC" : 0,
             "GTA" : 0, "GTT" : 0, "GTC" : 0, "GTG" : 0}
+
 
 
 

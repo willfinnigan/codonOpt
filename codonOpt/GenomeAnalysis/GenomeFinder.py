@@ -154,7 +154,7 @@ if __name__ == "__main__":
     dir = '/Users/Will/Documents/codonOpt_data/GenomeTmp/'
     representative = True
 
-    name_of_org = 'Escherichia_coli_K12'
+    name_of_org = 'Thermus thermophilus'
 
     get_genomes_for_org(dir, name_of_org, only_search_representative_genomes=representative)
 
