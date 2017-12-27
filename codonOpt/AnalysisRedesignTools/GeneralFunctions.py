@@ -65,7 +65,7 @@ def translate(dna_seq):
         translated += aa
     return translated
 
-def check_dna_back_translation(dna_seq, protein_seq):
+def check_dna_back_translation(dna_seq, protein_seq, log=False):
     """Check dna_seq translated = protein_seq
 
         Args:

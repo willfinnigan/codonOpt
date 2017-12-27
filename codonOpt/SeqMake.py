@@ -1,7 +1,7 @@
 from lea import *
 import logging, random, json
 
-from codonOpt.global_vars import empty_codon_table
+from codonOpt.global_vars import empty_codon_table, ROOT_DIR
 from codonOpt.AnalysisRedesignTools import MotifFinder, GCTools, MFE
 from codonOpt.AnalysisRedesignTools.GeneralFunctions import return_window_in_frame, translate, check_protein_seq, check_dna_back_translation
 
@@ -150,11 +150,12 @@ class CodonTable():
 
 class Sequence_Generator:
 
-    def __init__(self, codon_table):
+    def __init__(self, codon_table, check_dna_to_protein=True):
         self.codon_table = codon_table
         self.motifs_to_avoid = []
+        self.check_dna_to_protein = check_dna_to_protein
 
-    def optimise(self, protein_seq):
+    def optimise(self, protein_seq, log=False):
         # Make protein_seq all uppercase
         protein_seq = protein_seq.upper()
 
@@ -170,10 +171,17 @@ class Sequence_Generator:
             dna_seq += self.codon_table.lea_codon_dict[aa].random()
 
         # Log new DNA sequence
-        logging.debug('DNA Seq Generated: ' + str(dna_seq))
+        if log == False:
+            logging.debug('DNA Seq Generated: ' + str(dna_seq))
+        else:
+            logging.info('')
+            logging.info('---Optimise DNA sequence using codon table---')
+            logging.info('DNA Seq Generated: ' + str(dna_seq))
+            logging.info('')
 
         # Check that the new DNA sequence can be translated back to the same protein sequence
-        check_dna_back_translation(dna_seq, protein_seq)
+        if self.check_dna_to_protein == True:
+            check_dna_back_translation(dna_seq, protein_seq)
 
         return dna_seq
 
@@ -248,19 +256,16 @@ if __name__ == "__main__":
 
     logging.basicConfig(level=logging.INFO)
 
-    print(os.getcwd())
-
     # Test directories
-    input_dir = '/Data/'
-    output_dir = '/Data/'
-    codon_tables_dir = '/Data/'
+    working_dir = ROOT_DIR + '/Data/'
 
     # Single sequence test
-    codon_table = CodonTable(codon_tables_dir=codon_tables_dir, json_file='Escherichia_coli_K12.json', low_cuttoff=0.095)
-    seq_gen = Sequence_Generator(codon_table)
+    codon_table = CodonTable(codon_tables_dir=working_dir, json_file='Escherichia_coli_K12.json', low_cuttoff=0.1)
+    seq_gen = Sequence_Generator(codon_table, check_dna_to_protein=False)
+
     protein_seq = "MRAVVFENKERVAVKEVNAPRLQHPLDALVRVHLAGICGSDLHLYHGKIPVLPGSVLGHEFVGQVEAVGEGIQDLQPGDWVVGPFHIACGTCPYCRRHQYNLCERGGVYGYGPMFGNLQGAQAEILRVPFSNVNLRKLPPNLSPERAIFAGDILSTAYGGLIQGQLRPGDSVAVIGAGPVGLMAIEVAQVLGASKILAIDRIPERLERAASLGAIPINAEQENPVRRVRSETNDEGPDLVLEAVGGAATLSLALEMVRPGGRVSAVGVDNAPSFPFPLASGLVKDLTFRIGLANVHLYIDAVLALLASGRLQPERIVSHYLPLEEAPRGYELFDRKEALKVLLVVRGGGSGDYKDDDDK**"
 
-    dna_seq = seq_gen.optimise(protein_seq)
+    dna_seq = seq_gen.optimise(protein_seq, log=True)
 
     motifs_to_remove = ["ATTtt", 'GGaAt', "TaAAt"]
     dna_seq = seq_gen.motif_removal(dna_seq, motifs_to_remove)
@@ -270,10 +275,11 @@ if __name__ == "__main__":
 
     print('Finished')
 
+
     # Codon context
     # Sequential codons
     # NGG codons
-    # SD sites
+    # SD site
 
 
 

@@ -1,15 +1,14 @@
 import unittest
-import codonOpt.SeqMake, codonOpt.GenomeAnalysis.Analysis
-from codonOpt.GenomeAnalysis.Analysis import Genome, CDS
+import codonOpt.SeqMake
 from testfixtures import ShouldRaise
-from lea import *
+from codonOpt.global_vars import ROOT_DIR
 import logging
 
 
 class SeqMake_tests(unittest.TestCase):
 
     def setUp(self):
-        self.ct_dir = 'data/'
+        self.ct_dir = ROOT_DIR + '/test/example_data/Codon_tables/'
 
     def test_check_protein_seq(self):
         ''' Test that check protein sequence function passes proteins containing correct amino acids '''
@@ -54,7 +53,7 @@ class SeqMake_tests(unittest.TestCase):
     def test_that_optimised_dna_seq_is_three_times_protein_seq(self):
         """Test DNA seq is 3* length of protein seq"""
 
-        codon_table = codonOpt.SeqMake.CodonTable(codon_tables_dir=self.ct_dir, json_file='Tth_codon_table.json',
+        codon_table = codonOpt.SeqMake.CodonTable(codon_tables_dir=self.ct_dir, json_file='Escherichia_coli_K12.json',
                                                        low_cuttoff=0.1)
 
         seq_gen = codonOpt.SeqMake.Sequence_Generator(codon_table)
@@ -71,7 +70,7 @@ class SeqMake_tests(unittest.TestCase):
 
     def test_that_codon_table_imports_correctly(self):
 
-        codon_table = codonOpt.SeqMake.CodonTable(codon_tables_dir=self.ct_dir, json_file='Tth_codon_table.json',
+        codon_table = codonOpt.SeqMake.CodonTable(codon_tables_dir=self.ct_dir, json_file='Escherichia_coli_K12.json',
                                                        low_cuttoff=0.1)
 
         self.assertTrue(codon_table.check_codon_table())

@@ -2,18 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ccacc76-6bc7-419a-bfbb-7d0c5d174513" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codonOpt/Data/Escherichia_coli_K12.json" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/codonOpt/GenomeAnalysis/Analysis.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/codonOpt/GenomeAnalysis/GenomeFinder.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/codonOpt/GenomeAnalysis/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/codonOpt/test/data/Tth_codon_table.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/codonOpt/test/example_data/GenomeTmp/Escherichia_coli_K12/Escherichia_coli_str_K12_substr_MG1655/Escherichia_coli_str_K12_substr_MG1655,_complete_genome.gb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/codonOpt/test/example_data/GenomeTmp/Thermus thermophilus/Thermus_thermophilus_HB8/Thermus_thermophilus_HB8_plasmid_pTT27_DNA,_complete_sequence.gb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/codonOpt/test/example_data/Tth_codon_table.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/codonOpt/test/tests_genome_analysis.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/codonOpt/test/tests_load_genome.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/codonOpt/AnalysisRedesignTools/GeneralFunctions.py" afterPath="$PROJECT_DIR$/codonOpt/AnalysisRedesignTools/GeneralFunctions.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/codonOpt/SeqMake.py" afterPath="$PROJECT_DIR$/codonOpt/SeqMake.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/codonOpt/global_vars.py" afterPath="$PROJECT_DIR$/codonOpt/global_vars.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/codonOpt/test/tests_seqmake.py" afterPath="$PROJECT_DIR$/codonOpt/test/tests_seqmake.py" />
     </list>
     <ignored path="codonOpt.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -97,26 +90,28 @@
       <file leaf-file-name="SeqMake.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/codonOpt/SeqMake.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="258" column="34" lean-forward="false" selection-start-line="258" selection-start-column="34" selection-end-line="258" selection-end-column="34" />
+            <state relative-caret-position="135">
+              <caret line="251" column="0" lean-forward="true" selection-start-line="251" selection-start-column="0" selection-end-line="251" selection-end-column="0" />
               <folding>
-                <element signature="e#0#17#0" expanded="true" />
-                <element signature="e#1267#5732#0" expanded="false" />
-                <element signature="e#1267#1793#1" expanded="false" />
-                <element signature="e#1882#2146#0" expanded="false" />
-                <element signature="e#2228#2754#0" expanded="false" />
-                <element signature="e#2794#4608#0" expanded="false" />
-                <element signature="e#3125#3766#0" expanded="false" />
-                <element signature="e#4688#5732#0" expanded="false" />
-                <element signature="e#5765#9195#0" expanded="false" />
-                <element signature="e#5806#5870#0" expanded="false" />
-                <element signature="e#5917#6666#0" expanded="false" />
-                <element signature="e#6718#6792#0" expanded="false" />
-                <element signature="e#6856#7022#0" expanded="false" />
-                <element signature="e#7079#7307#0" expanded="false" />
-                <element signature="e#7389#8285#0" expanded="false" />
-                <element signature="e#8414#8953#0" expanded="false" />
-                <element signature="e#9068#9195#0" expanded="false" />
+                <element signature="e#331#1250#1" expanded="false" />
+                <element signature="e#1277#5742#0" expanded="false" />
+                <element signature="e#1277#1803#1" expanded="false" />
+                <element signature="e#1892#2156#0" expanded="false" />
+                <element signature="e#2026#2156#0" expanded="false" />
+                <element signature="e#2238#2764#0" expanded="false" />
+                <element signature="e#2804#4618#0" expanded="false" />
+                <element signature="e#3135#3776#0" expanded="false" />
+                <element signature="e#4698#5742#0" expanded="false" />
+                <element signature="e#5775#9588#0" expanded="false" />
+                <element signature="e#5843#5964#0" expanded="false" />
+                <element signature="e#6022#7059#0" expanded="false" />
+                <element signature="e#7111#7185#0" expanded="false" />
+                <element signature="e#7249#7415#0" expanded="false" />
+                <element signature="e#7472#7700#0" expanded="false" />
+                <element signature="e#7782#8678#0" expanded="false" />
+                <element signature="e#8807#9346#0" expanded="false" />
+                <element signature="e#9461#9588#0" expanded="false" />
+                <element signature="e#9623#10823#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -154,8 +149,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/codonOpt/example_data/protein_seqs2.fasta" />
-        <option value="$PROJECT_DIR$/codonOpt/test/command_line.py" />
         <option value="$PROJECT_DIR$/codonOpt/command_line.py" />
         <option value="$USER_HOME$/PycharmProjects/untitled12/test.py" />
         <option value="$USER_HOME$/PycharmProjects/Codon usage/Genome_tools/Genome_analysis.py" />
@@ -195,15 +188,17 @@
         <option value="$PROJECT_DIR$/codonOpt/GenomeAnalysis/tests.py" />
         <option value="$PROJECT_DIR$/codonOpt/GenomeAnalysis/CodonTableMaker.py" />
         <option value="$PROJECT_DIR$/codonOpt/test/tests.py" />
-        <option value="$PROJECT_DIR$/codonOpt/test/tests_seqmake.py" />
-        <option value="$PROJECT_DIR$/codonOpt/AnalysisRedesignTools/MFE.py" />
         <option value="$PROJECT_DIR$/codonOpt/AnalysisRedesignTools/ViennaRNA_wrapper.py" />
-        <option value="$PROJECT_DIR$/codonOpt/global_vars.py" />
         <option value="$PROJECT_DIR$/codonOpt/test/tests_load_genome.py" />
         <option value="$PROJECT_DIR$/codonOpt/GenomeAnalysis/GenomeFinder.py" />
         <option value="$PROJECT_DIR$/codonOpt/test/tests_genome_analysis.py" />
         <option value="$PROJECT_DIR$/codonOpt/GenomeAnalysis/Analysis.py" />
         <option value="$PROJECT_DIR$/codonOpt/test/example_data/Codon_tables/Escherichia_coli_K12.json" />
+        <option value="$PROJECT_DIR$/codonOpt/global_vars.py" />
+        <option value="$PROJECT_DIR$/codonOpt/AnalysisRedesignTools/GCTools.py" />
+        <option value="$PROJECT_DIR$/codonOpt/AnalysisRedesignTools/MFE.py" />
+        <option value="$PROJECT_DIR$/codonOpt/AnalysisRedesignTools/GeneralFunctions.py" />
+        <option value="$PROJECT_DIR$/codonOpt/test/tests_seqmake.py" />
         <option value="$PROJECT_DIR$/codonOpt/SeqMake.py" />
       </list>
     </option>
@@ -346,24 +341,6 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="tests_load_genome" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/codonOpt/test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="codonOpt" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/codonOpt/test/tests_load_genome.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
     <configuration default="false" name="GenomeFinder" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -395,6 +372,24 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="codonOpt" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/codonOpt/SeqMake.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="tests_seqmake" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/codonOpt/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="codonOpt" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/codonOpt/test/tests_seqmake.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -499,17 +494,17 @@
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.Analysis" />
       <item index="1" class="java.lang.String" itemvalue="Python.tests_genome_analysis" />
-      <item index="2" class="java.lang.String" itemvalue="Python.tests_load_genome" />
-      <item index="3" class="java.lang.String" itemvalue="Python.GenomeFinder" />
-      <item index="4" class="java.lang.String" itemvalue="Python.SeqMake" />
+      <item index="2" class="java.lang.String" itemvalue="Python.GenomeFinder" />
+      <item index="3" class="java.lang.String" itemvalue="Python.SeqMake" />
+      <item index="4" class="java.lang.String" itemvalue="Python.tests_seqmake" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python.SeqMake" />
-        <item index="1" class="java.lang.String" itemvalue="Python.tests_genome_analysis" />
-        <item index="2" class="java.lang.String" itemvalue="Python.Analysis" />
-        <item index="3" class="java.lang.String" itemvalue="Python.GenomeFinder" />
-        <item index="4" class="java.lang.String" itemvalue="Python.tests_load_genome" />
+        <item index="1" class="java.lang.String" itemvalue="Python.tests_seqmake" />
+        <item index="2" class="java.lang.String" itemvalue="Python.tests_genome_analysis" />
+        <item index="3" class="java.lang.String" itemvalue="Python.Analysis" />
+        <item index="4" class="java.lang.String" itemvalue="Python.GenomeFinder" />
       </list>
     </recent_temporary>
     <configuration default="true" type="tests" factoryName="Attests">
@@ -620,7 +615,14 @@
       <option name="project" value="LOCAL" />
       <updated>1505555709924</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Simplifying">
+      <created>1514378792301</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1514378792301</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TodoView">
@@ -661,20 +663,20 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26027396" sideWeight="0.14701131" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26027396" sideWeight="0.14701131" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26027396" sideWeight="0.8529887" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22876713" sideWeight="0.8529887" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21643835" sideWeight="0.8812601" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37945205" sideWeight="0.45799676" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.45153475" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2657512" sideWeight="0.8422131" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27382874" sideWeight="0.8312611" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.4838449" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24959612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.49676898" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27786753" sideWeight="0.15778689" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2657512" sideWeight="0.1687389" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
@@ -718,7 +720,8 @@
     <MESSAGE value="Added lots of redeign tools" />
     <MESSAGE value="Added stuff for pypy" />
     <MESSAGE value="Added more to genome analysis and tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added more to genome analysis and tests" />
+    <MESSAGE value="Simplifying" />
+    <option name="LAST_COMMIT_MESSAGE" value="Simplifying" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -736,7 +739,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="57" />
+      <option name="time" value="60" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -746,13 +749,6 @@
     <entry file="file://$PROJECT_DIR$/../../Python/Codon optimisation/Ver 1.1/GC_content_analysis.py" />
     <entry file="file://$PROJECT_DIR$/../../Python/Codon optimisation/Ver 1.1/To do" />
     <entry file="file://$PROJECT_DIR$/../../Python/Codon optimisation/Ver 1.1/RNAfold.py" />
-    <entry file="file://$PROJECT_DIR$/codonOpt/AnalysisRedesignTools/MotifFinder.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../Python/Codon optimisation/Ver 1.1/MFE_minimisation.py" />
     <entry file="file:///anaconda/lib/python3.4/site-packages/Bio/GenBank/Scanner.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -969,54 +965,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/codonOpt/global_vars.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="93" column="0" lean-forward="false" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codonOpt/AnalysisRedesignTools/GCTools.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="24" column="31" lean-forward="false" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codonOpt/AnalysisRedesignTools/GeneralFunctions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="16" column="35" lean-forward="false" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codonOpt/AnalysisRedesignTools/MFE.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="26" column="33" lean-forward="false" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/codonOpt/AnalysisRedesignTools/ViennaRNA_wrapper.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="467">
           <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codonOpt/test/tests_seqmake.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="13" column="37" lean-forward="false" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
-          <folding>
-            <element signature="e#631#970#0" expanded="false" />
-            <element signature="e#1034#1443#0" expanded="false" />
-            <element signature="e#1521#2034#0" expanded="false" />
-            <element signature="e#2115#2500#0" expanded="false" />
-            <element signature="e#2570#2768#0" expanded="false" />
-            <element signature="e#2848#3707#0" expanded="false" />
-            <element signature="e#3773#4008#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1036,28 +988,110 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/codonOpt/global_vars.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="8" />
+          <folding>
+            <element signature="e#106#959#0" expanded="false" />
+            <element signature="e#1108#2316#0" expanded="false" />
+            <element signature="e#2337#2766#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codonOpt/AnalysisRedesignTools/MotifFinder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding>
+            <element signature="e#180#958#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codonOpt/AnalysisRedesignTools/GCTools.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="81" column="0" lean-forward="true" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+          <folding>
+            <element signature="e#123#512#0" expanded="false" />
+            <element signature="e#552#1144#0" expanded="false" />
+            <element signature="e#1217#1640#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codonOpt/AnalysisRedesignTools/MFE.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="40" column="88" lean-forward="true" selection-start-line="40" selection-start-column="88" selection-end-line="40" selection-end-column="88" />
+          <folding>
+            <element signature="e#312#396#0" expanded="false" />
+            <element signature="e#425#599#0" expanded="false" />
+            <element signature="e#668#1120#0" expanded="false" />
+            <element signature="e#2371#3290#0" expanded="false" />
+            <element signature="e#3359#3562#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codonOpt/AnalysisRedesignTools/GeneralFunctions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="67" column="62" lean-forward="false" selection-start-line="67" selection-start-column="62" selection-end-line="67" selection-end-column="62" />
+          <folding>
+            <element signature="e#140#422#0" expanded="false" />
+            <element signature="e#464#1123#0" expanded="false" />
+            <element signature="e#1153#1984#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codonOpt/test/tests_seqmake.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="39" lean-forward="false" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#181#5246#0" expanded="false" />
+            <element signature="e#313#545#0" expanded="false" />
+            <element signature="e#602#941#0" expanded="false" />
+            <element signature="e#1005#1414#0" expanded="false" />
+            <element signature="e#1492#2005#0" expanded="false" />
+            <element signature="e#2086#2471#0" expanded="false" />
+            <element signature="e#2541#2739#0" expanded="false" />
+            <element signature="e#2819#3683#0" expanded="false" />
+            <element signature="e#3749#3989#0" expanded="false" />
+            <element signature="e#4065#5246#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/codonOpt/SeqMake.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="258" column="34" lean-forward="false" selection-start-line="258" selection-start-column="34" selection-end-line="258" selection-end-column="34" />
+        <state relative-caret-position="135">
+          <caret line="251" column="0" lean-forward="true" selection-start-line="251" selection-start-column="0" selection-end-line="251" selection-end-column="0" />
           <folding>
-            <element signature="e#0#17#0" expanded="true" />
-            <element signature="e#1267#5732#0" expanded="false" />
-            <element signature="e#1267#1793#1" expanded="false" />
-            <element signature="e#1882#2146#0" expanded="false" />
-            <element signature="e#2228#2754#0" expanded="false" />
-            <element signature="e#2794#4608#0" expanded="false" />
-            <element signature="e#3125#3766#0" expanded="false" />
-            <element signature="e#4688#5732#0" expanded="false" />
-            <element signature="e#5765#9195#0" expanded="false" />
-            <element signature="e#5806#5870#0" expanded="false" />
-            <element signature="e#5917#6666#0" expanded="false" />
-            <element signature="e#6718#6792#0" expanded="false" />
-            <element signature="e#6856#7022#0" expanded="false" />
-            <element signature="e#7079#7307#0" expanded="false" />
-            <element signature="e#7389#8285#0" expanded="false" />
-            <element signature="e#8414#8953#0" expanded="false" />
-            <element signature="e#9068#9195#0" expanded="false" />
+            <element signature="e#331#1250#1" expanded="false" />
+            <element signature="e#1277#5742#0" expanded="false" />
+            <element signature="e#1277#1803#1" expanded="false" />
+            <element signature="e#1892#2156#0" expanded="false" />
+            <element signature="e#2026#2156#0" expanded="false" />
+            <element signature="e#2238#2764#0" expanded="false" />
+            <element signature="e#2804#4618#0" expanded="false" />
+            <element signature="e#3135#3776#0" expanded="false" />
+            <element signature="e#4698#5742#0" expanded="false" />
+            <element signature="e#5775#9588#0" expanded="false" />
+            <element signature="e#5843#5964#0" expanded="false" />
+            <element signature="e#6022#7059#0" expanded="false" />
+            <element signature="e#7111#7185#0" expanded="false" />
+            <element signature="e#7249#7415#0" expanded="false" />
+            <element signature="e#7472#7700#0" expanded="false" />
+            <element signature="e#7782#8678#0" expanded="false" />
+            <element signature="e#8807#9346#0" expanded="false" />
+            <element signature="e#9461#9588#0" expanded="false" />
+            <element signature="e#9623#10823#0" expanded="false" />
           </folding>
         </state>
       </provider>
