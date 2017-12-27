@@ -5,6 +5,8 @@ from codonOpt.global_vars import empty_codon_table
 from codonOpt.AnalysisRedesignTools import MotifFinder, GCTools, MFE
 from codonOpt.AnalysisRedesignTools.GeneralFunctions import return_window_in_frame, translate, check_protein_seq, check_dna_back_translation
 
+import os
+
 """SeqMake Module.
 
 Summary:
@@ -46,7 +48,6 @@ class CodonTable():
         codon_tables_dir = "" - This is the directory to find the codon table json file.
         json_file = "" - This is the json file containing the codon usage information.
         low_cuttoff = 0 - This is the lowcuttoff which is used to remove codons with low frequency
-
 
     """
 
@@ -247,10 +248,12 @@ if __name__ == "__main__":
 
     logging.basicConfig(level=logging.INFO)
 
+    print(os.getcwd())
+
     # Test directories
-    input_dir = '/Users/Will/Documents/codonOpt_data/SeqMake_Input/'
-    output_dir = '/Users/Will/Documents/codonOpt_data/SeqMake_Output/'
-    codon_tables_dir = '/Users/Will/Documents/codonOpt_data/Codon_tables/'
+    input_dir = '/Data/'
+    output_dir = '/Data/'
+    codon_tables_dir = '/Data/'
 
     # Single sequence test
     codon_table = CodonTable(codon_tables_dir=codon_tables_dir, json_file='Escherichia_coli_K12.json', low_cuttoff=0.095)
@@ -261,9 +264,9 @@ if __name__ == "__main__":
 
     motifs_to_remove = ["ATTtt", 'GGaAt', "TaAAt"]
     dna_seq = seq_gen.motif_removal(dna_seq, motifs_to_remove)
-    dna_seq = seq_gen.remove_high_GC_windows(dna_seq, 100, 67)
-    dna_seq = seq_gen.minimise_mfe_windows(dna_seq, -10, 30, 5)
-    dna_seq = seq_gen.minimise_mfe_five_prime(dna_seq, -5)
+    # dna_seq = seq_gen.remove_high_GC_windows(dna_seq, 100, 67)
+    # dna_seq = seq_gen.minimise_mfe_windows(dna_seq, -10, 30, 5)
+    # dna_seq = seq_gen.minimise_mfe_five_prime(dna_seq, -5)
 
     print('Finished')
 
@@ -271,6 +274,11 @@ if __name__ == "__main__":
     # Sequential codons
     # NGG codons
     # SD sites
+
+
+
+
+
 
     
 
