@@ -4,7 +4,7 @@ Example:
 
 **1. Set up a codon table, and a sequence generator to use that codon table**
 
-`codon_table = CodonTable(codon_tables_dir=codon_tables_dir, json_file='Escherichia_coli_K12.json', low_cuttoff=0.1)`
+`codon_table = CodonTable(codon_tables_dir='/tables/, json_file='E_coli.json', low_cuttoff=0.1)`
 
 `seq_gen = Sequence_Generator(codon_table)`
     
