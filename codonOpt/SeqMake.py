@@ -37,7 +37,6 @@ Example:
 
 """
 
-
 class CodonTable():
     """CodonTable class - codontable.lea_codon_dict for optimisation, loads from json file
 
@@ -186,17 +185,29 @@ class Sequence_Generator:
         return dna_seq
 
     def optimise_from_dna(self, dna_seq):
+
+        # Translate dna_seq back to a protein sequence
         protein_seq = translate(dna_seq)
+
+        # Create a codon optimised dna sequenced from the protein sequence.
         return self.optimise(protein_seq)
 
     def redesign_section(self, dna_seq, start, end):
 
+        # Take a section of the dna_seq between start and end.
         window = dna_seq[start:end]
+
+        # Codon optimise the window
         new_window = self.optimise_from_dna(window)
+
+        # Replace the window section of dna_seq with the newly codon optimised new_window
         dna_seq = dna_seq[:start] + new_window + dna_seq[end:]
 
         return dna_seq
 
+    """ ------- 
+    These functions use the AnalysisRedesignTools
+        -------"""
     def motif_removal(self, dna_seq, motifs):
 
         for motif_seq in motifs:
@@ -252,8 +263,9 @@ class Sequence_Generator:
 
 
 if __name__ == "__main__":
-    """ For testing this module """
+    """ For testing"""
 
+    # Turn on logging at info level
     logging.basicConfig(level=logging.INFO)
 
     # Test directories
@@ -269,11 +281,10 @@ if __name__ == "__main__":
 
     motifs_to_remove = ["ATTtt", 'GGaAt', "TaAAt"]
     dna_seq = seq_gen.motif_removal(dna_seq, motifs_to_remove)
-    # dna_seq = seq_gen.remove_high_GC_windows(dna_seq, 100, 67)
-    # dna_seq = seq_gen.minimise_mfe_windows(dna_seq, -10, 30, 5)
-    # dna_seq = seq_gen.minimise_mfe_five_prime(dna_seq, -5)
+    dna_seq = seq_gen.remove_high_GC_windows(dna_seq, 100, 67)
+    dna_seq = seq_gen.minimise_mfe_windows(dna_seq, -10, 30, 5)
+    dna_seq = seq_gen.minimise_mfe_five_prime(dna_seq, -5)
 
-    print('Finished')
 
 
     # Codon context

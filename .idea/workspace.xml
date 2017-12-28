@@ -2,8 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ccacc76-6bc7-419a-bfbb-7d0c5d174513" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codonOpt/test/example_data/PickledGenomes/Escherichia_coli_K12.pickle" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/codonOpt/test/example_data/Codon_tables/Escherichia_coli_K12.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/codonOpt/test/example_data/SeqMake_Input/protein_seqs.fasta" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/codonOpt/test/example_data/SeqMake_Output/test_dna.fasta" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/codonOpt/test/example_data/protein_seqs.fasta" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/codonOpt/test/example_data/protein_seqs2.fasta" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/codonOpt/test/example_data/test_dna.fasta" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/codonOpt/__init__.py" afterPath="$PROJECT_DIR$/codonOpt/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/codonOpt/SeqMake.py" afterPath="$PROJECT_DIR$/codonOpt/SeqMake.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/codonOpt/test/tests_seqmake.py" afterPath="$PROJECT_DIR$/codonOpt/test/tests_seqmake.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/setup.py" afterPath="$PROJECT_DIR$/setup.py" />
     </list>
     <ignored path="codonOpt.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -87,51 +97,38 @@
       <file leaf-file-name="SeqMake.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/codonOpt/SeqMake.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="251" column="0" lean-forward="false" selection-start-line="251" selection-start-column="0" selection-end-line="251" selection-end-column="0" />
+            <state relative-caret-position="105">
+              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
               <folding>
-                <element signature="e#331#1250#1" expanded="false" />
-                <element signature="e#1277#5742#0" expanded="false" />
-                <element signature="e#1277#1803#1" expanded="false" />
-                <element signature="e#1892#2156#0" expanded="false" />
-                <element signature="e#2026#2156#0" expanded="false" />
-                <element signature="e#2238#2764#0" expanded="false" />
-                <element signature="e#2804#4618#0" expanded="false" />
-                <element signature="e#3135#3776#0" expanded="false" />
-                <element signature="e#4698#5742#0" expanded="false" />
-                <element signature="e#5775#9588#0" expanded="false" />
-                <element signature="e#5843#5964#0" expanded="false" />
-                <element signature="e#6022#7059#0" expanded="false" />
-                <element signature="e#7111#7185#0" expanded="false" />
-                <element signature="e#7249#7415#0" expanded="false" />
-                <element signature="e#7472#7700#0" expanded="false" />
-                <element signature="e#7782#8678#0" expanded="false" />
-                <element signature="e#8807#9346#0" expanded="false" />
-                <element signature="e#9461#9588#0" expanded="false" />
-                <element signature="e#9623#10823#0" expanded="false" />
+                <element signature="e#1276#5741#0" expanded="false" />
+                <element signature="e#1276#1802#1" expanded="false" />
+                <element signature="e#1891#2155#0" expanded="false" />
+                <element signature="e#2025#2155#0" expanded="false" />
+                <element signature="e#2237#2763#0" expanded="false" />
+                <element signature="e#2803#4617#0" expanded="false" />
+                <element signature="e#3134#3775#0" expanded="false" />
+                <element signature="e#4697#5741#0" expanded="false" />
+                <element signature="e#5774#9997#0" expanded="false" />
+                <element signature="e#5842#5963#0" expanded="false" />
+                <element signature="e#6021#7058#0" expanded="false" />
+                <element signature="e#7111#7317#0" expanded="false" />
+                <element signature="e#7381#7738#0" expanded="false" />
+                <element signature="e#7881#8109#0" expanded="false" />
+                <element signature="e#8191#9087#0" expanded="false" />
+                <element signature="e#9216#9755#0" expanded="false" />
+                <element signature="e#9870#9997#0" expanded="false" />
+                <element signature="e#10032#11227#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="setup.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/setup.py">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+            <state relative-caret-position="345">
+              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/codonOpt/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-              <folding>
-                <element signature="e#21#80#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -168,7 +165,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/codonOpt/command_line.py" />
         <option value="$USER_HOME$/PycharmProjects/untitled12/test.py" />
         <option value="$USER_HOME$/PycharmProjects/Codon usage/Genome_tools/Genome_analysis.py" />
         <option value="$PROJECT_DIR$/codonOpt/example_data/Escherichia coli/dict" />
@@ -215,10 +211,11 @@
         <option value="$PROJECT_DIR$/codonOpt/AnalysisRedesignTools/GCTools.py" />
         <option value="$PROJECT_DIR$/codonOpt/AnalysisRedesignTools/MFE.py" />
         <option value="$PROJECT_DIR$/codonOpt/AnalysisRedesignTools/GeneralFunctions.py" />
-        <option value="$PROJECT_DIR$/codonOpt/test/tests_seqmake.py" />
-        <option value="$PROJECT_DIR$/codonOpt/SeqMake.py" />
-        <option value="$PROJECT_DIR$/setup.py" />
         <option value="$PROJECT_DIR$/codonOpt/__init__.py" />
+        <option value="$PROJECT_DIR$/codonOpt/test/tests_seqmake.py" />
+        <option value="$PROJECT_DIR$/setup.py" />
+        <option value="$PROJECT_DIR$/codonOpt/SeqMake.py" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -242,35 +239,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="codonOpt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="codonOpt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="codonOpt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="codonOpt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="codonOpt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
@@ -281,6 +249,31 @@
             <PATH_ELEMENT USER_OBJECT="Codon usage">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="codonOpt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="codonOpt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="codonOpt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -311,6 +304,116 @@
       <recent name="$PROJECT_DIR$/codonOpt/test/example_data" />
     </key>
   </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/README.md</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -323,7 +426,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.SeqMake">
+  <component name="RunManager" selected="Python.tests_seqmake">
     <configuration default="false" name="Analysis" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -519,8 +622,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.SeqMake" />
-        <item index="1" class="java.lang.String" itemvalue="Python.tests_seqmake" />
+        <item index="0" class="java.lang.String" itemvalue="Python.tests_seqmake" />
+        <item index="1" class="java.lang.String" itemvalue="Python.SeqMake" />
         <item index="2" class="java.lang.String" itemvalue="Python.tests_genome_analysis" />
         <item index="3" class="java.lang.String" itemvalue="Python.Analysis" />
         <item index="4" class="java.lang.String" itemvalue="Python.GenomeFinder" />
@@ -655,7 +758,14 @@
       <option name="project" value="LOCAL" />
       <updated>1514384407291</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="0.2 Setup">
+      <created>1514400792097</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1514400792097</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TodoView">
@@ -668,16 +778,17 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <frame x="0" y="0" width="1280" height="800" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27786753" sideWeight="0.8312611" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28594506" sideWeight="0.8312611" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.48707592" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26027396" sideWeight="0.14701131" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22876713" sideWeight="0.8529887" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21643835" sideWeight="0.8812601" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21643835" sideWeight="0.8812601" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37945205" sideWeight="0.45799676" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24959612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32465753" sideWeight="0.45153475" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32465753" sideWeight="0.45153475" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.49676898" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2657512" sideWeight="0.1687389" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -773,17 +884,11 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="60" />
+      <option name="time" value="62" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/codonOpt/MotifRemove.py" />
-    <entry file="file://$PROJECT_DIR$/codonOpt/command_line.py" />
-    <entry file="file://$PROJECT_DIR$/../../Python/Codon optimisation/Ver 1.1/GC_content_analysis.py" />
-    <entry file="file://$PROJECT_DIR$/../../Python/Codon optimisation/Ver 1.1/To do" />
-    <entry file="file://$PROJECT_DIR$/../../Python/Codon optimisation/Ver 1.1/RNAfold.py" />
-    <entry file="file://$PROJECT_DIR$/../../Python/Codon optimisation/Ver 1.1/MFE_minimisation.py" />
     <entry file="file:///anaconda/lib/python3.4/site-packages/Bio/GenBank/Scanner.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-366">
@@ -889,18 +994,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/codonOpt/global_vars.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="8" />
-          <folding>
-            <element signature="e#106#959#0" expanded="false" />
-            <element signature="e#1108#2316#0" expanded="false" />
-            <element signature="e#2337#2766#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/codonOpt/AnalysisRedesignTools/MotifFinder.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -949,66 +1042,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/codonOpt/test/tests_seqmake.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="39" lean-forward="false" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-            <element signature="e#181#5246#0" expanded="false" />
-            <element signature="e#313#545#0" expanded="false" />
-            <element signature="e#602#941#0" expanded="false" />
-            <element signature="e#1005#1414#0" expanded="false" />
-            <element signature="e#1492#2005#0" expanded="false" />
-            <element signature="e#2086#2471#0" expanded="false" />
-            <element signature="e#2541#2739#0" expanded="false" />
-            <element signature="e#2819#3683#0" expanded="false" />
-            <element signature="e#3749#3989#0" expanded="false" />
-            <element signature="e#4065#5246#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codonOpt/SeqMake.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="251" column="0" lean-forward="false" selection-start-line="251" selection-start-column="0" selection-end-line="251" selection-end-column="0" />
-          <folding>
-            <element signature="e#331#1250#1" expanded="false" />
-            <element signature="e#1277#5742#0" expanded="false" />
-            <element signature="e#1277#1803#1" expanded="false" />
-            <element signature="e#1892#2156#0" expanded="false" />
-            <element signature="e#2026#2156#0" expanded="false" />
-            <element signature="e#2238#2764#0" expanded="false" />
-            <element signature="e#2804#4618#0" expanded="false" />
-            <element signature="e#3135#3776#0" expanded="false" />
-            <element signature="e#4698#5742#0" expanded="false" />
-            <element signature="e#5775#9588#0" expanded="false" />
-            <element signature="e#5843#5964#0" expanded="false" />
-            <element signature="e#6022#7059#0" expanded="false" />
-            <element signature="e#7111#7185#0" expanded="false" />
-            <element signature="e#7249#7415#0" expanded="false" />
-            <element signature="e#7472#7700#0" expanded="false" />
-            <element signature="e#7782#8678#0" expanded="false" />
-            <element signature="e#8807#9346#0" expanded="false" />
-            <element signature="e#9461#9588#0" expanded="false" />
-            <element signature="e#9623#10823#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LICENSE.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -1021,18 +1058,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MANIFEST">
+    <entry file="file:///anaconda/lib/python3.4/site-packages/codonOpt/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state relative-caret-position="75">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/setup.py">
+    <entry file="file://$PROJECT_DIR$/codonOpt.egg-info/top_level.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codonOpt.egg-info/dependency_links.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1044,6 +1088,114 @@
           <folding>
             <element signature="e#21#80#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codonOpt/AnalysisRedesignTools/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MANIFEST">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codonOpt/test/tests_seqmake.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="110" column="0" lean-forward="true" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#206#239#0" expanded="false" />
+            <element signature="e#287#519#0" expanded="false" />
+            <element signature="e#576#915#0" expanded="false" />
+            <element signature="e#979#1388#0" expanded="false" />
+            <element signature="e#1466#1979#0" expanded="false" />
+            <element signature="e#2060#2445#0" expanded="false" />
+            <element signature="e#2515#2713#0" expanded="false" />
+            <element signature="e#2793#3657#0" expanded="false" />
+            <element signature="e#3723#3963#0" expanded="false" />
+            <element signature="e#4039#5220#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codonOpt/global_vars.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="8" />
+          <folding>
+            <element signature="e#106#959#0" expanded="false" />
+            <element signature="e#1108#2316#0" expanded="false" />
+            <element signature="e#2337#2766#0" expanded="false" />
+            <element signature="e#2798#3741#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codonOpt/README">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codonOpt/SeqMake.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding>
+            <element signature="e#1276#5741#0" expanded="false" />
+            <element signature="e#1276#1802#1" expanded="false" />
+            <element signature="e#1891#2155#0" expanded="false" />
+            <element signature="e#2025#2155#0" expanded="false" />
+            <element signature="e#2237#2763#0" expanded="false" />
+            <element signature="e#2803#4617#0" expanded="false" />
+            <element signature="e#3134#3775#0" expanded="false" />
+            <element signature="e#4697#5741#0" expanded="false" />
+            <element signature="e#5774#9997#0" expanded="false" />
+            <element signature="e#5842#5963#0" expanded="false" />
+            <element signature="e#6021#7058#0" expanded="false" />
+            <element signature="e#7111#7317#0" expanded="false" />
+            <element signature="e#7381#7738#0" expanded="false" />
+            <element signature="e#7881#8109#0" expanded="false" />
+            <element signature="e#8191#9087#0" expanded="false" />
+            <element signature="e#9216#9755#0" expanded="false" />
+            <element signature="e#9870#9997#0" expanded="false" />
+            <element signature="e#10032#11227#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

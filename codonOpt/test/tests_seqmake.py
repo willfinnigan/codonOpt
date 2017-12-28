@@ -8,7 +8,7 @@ import logging
 class SeqMake_tests(unittest.TestCase):
 
     def setUp(self):
-        self.ct_dir = ROOT_DIR + '/test/example_data/Codon_tables/'
+        self.ct_dir = ROOT_DIR + '/Data/'
 
     def test_check_protein_seq(self):
         ''' Test that check protein sequence function passes proteins containing correct amino acids '''
