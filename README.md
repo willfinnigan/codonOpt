@@ -21,4 +21,3 @@ Example:
     dna_seq = seq_gen.remove_high_GC_windows(dna_seq, 100, 67) 
     dna_seq = seq_gen.minimise_mfe_windows(dna_seq, -10, 30, 
     dna_seq = seq_gen.minimise_mfe_five_prime(dna_seq, -5)
-    
