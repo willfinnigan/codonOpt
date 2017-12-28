@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ccacc76-6bc7-419a-bfbb-7d0c5d174513" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codonOpt/test/example_data/PickledGenomes/Escherichia_coli_K12.pickle" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/codonOpt/test/example_data/Codon_tables/Escherichia_coli_K12.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/codonOpt/test/example_data/SeqMake_Input/protein_seqs.fasta" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/codonOpt/test/example_data/SeqMake_Output/test_dna.fasta" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/codonOpt/test/example_data/protein_seqs.fasta" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/codonOpt/test/example_data/protein_seqs2.fasta" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/codonOpt/test/example_data/test_dna.fasta" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/codonOpt/SeqMake.py" afterPath="$PROJECT_DIR$/codonOpt/SeqMake.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/codonOpt/test/tests_seqmake.py" afterPath="$PROJECT_DIR$/codonOpt/test/tests_seqmake.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/setup.py" afterPath="$PROJECT_DIR$/setup.py" />
     </list>
     <ignored path="codonOpt.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -126,8 +116,8 @@
       <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+            <state relative-caret-position="360">
+              <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -765,7 +755,14 @@
       <option name="project" value="LOCAL" />
       <updated>1514400792097</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Updated Readme">
+      <created>1514483774970</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1514483774970</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TodoView">
@@ -866,7 +863,8 @@
     <MESSAGE value="Simplifying" />
     <MESSAGE value="Added some more logging" />
     <MESSAGE value="0.2 Setup" />
-    <option name="LAST_COMMIT_MESSAGE" value="0.2 Setup" />
+    <MESSAGE value="Updated Readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated Readme" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1193,8 +1191,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        <state relative-caret-position="360">
+          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding />
         </state>
       </provider>
