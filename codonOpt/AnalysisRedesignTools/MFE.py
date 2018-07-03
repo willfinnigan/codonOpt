@@ -47,7 +47,7 @@ def minimise_mfe(dna_seq, start, end, seq_gen, energy_limit, iterations=100):
 
         elif energy_window > energy_limit:
             if count == 0:
-                logging.info('Already reduced by previous change')
+                logging.info('MFE = ' + str(energy_window) + ', already lower than limit of ' + str(energy_limit))
             else:
                 logging.info("In " + str(count) + " iterations, energy is now " + str(energy_window))
             count = iterations + 1
@@ -91,7 +91,11 @@ def plot_mfe_windows(dna_seq, window_size=30, window_move=5):
 
     return fig
 
+def count_windows_above_threshold(list_of_window_energies, energy_threshold):
 
+    number_of_above_threshold_windows = sum(energy < energy_threshold for energy in list_of_window_energies)
+
+    return number_of_above_threshold_windows
 
 
 

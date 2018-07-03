@@ -1,5 +1,7 @@
 import logging, random
 from codonOpt.global_vars import DNA_to_aa, amino_acids_list
+import time, datetime
+
 
 
 def return_window_in_frame(dna_seq, start, end):
@@ -27,7 +29,9 @@ def check_protein_seq(protein_seq):
 
     logging.debug('Checking protein sequence is valid...')
 
-    protein_seq = protein_seq.upper()
+    for i in range(len(protein_seq)):
+        protein_seq[i] = protein_seq[i].upper()
+
     for aa in protein_seq:
         if aa not in amino_acids_list:
             logging.warning('Non amino acid character found in protein sequence: ' + aa)
@@ -53,11 +57,9 @@ def translate(dna_seq):
     """
 
     translated = ""
-    dna_seq = dna_seq.upper()
+    for i in range(len(dna_seq)):
+        dna_seq[i] = dna_seq[i].upper()
     dna_length = len(dna_seq)
-
-    if (dna_length%3) != 0:
-        raise NameError('DNA Sequence to be translated is not divisable by 3')
 
     for i in range(0,dna_length,3):
         triplet = dna_seq[i:i+3]
@@ -94,3 +96,27 @@ def check_dna_back_translation(dna_seq, protein_seq, log=False):
     logging.debug('Passed')
     return True
 
+def import_protein_fasta(fasta_file, input_dir=''):
+    from Bio import SeqIO
+
+    file = input_dir + fasta_file
+
+    # Use biopython to make a list of input protein sequences
+    dict_seqs = {}
+    for seq_record in SeqIO.parse(file, "fasta"):
+        dict_seqs[seq_record.id] = str(seq_record.seq)
+
+    return dict_seqs
+
+def export_dna_dict_fasta(dict_dna_seqs, output_dir=''):
+    timestamp = datetime.datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d %H:%M:%S')
+    protein_file_name = 'codonOpt_' + str(timestamp) + '.fasta'
+    file_name_and_location = output_dir + protein_file_name
+    file = open(file_name_and_location, "w")
+
+    for id in dict_dna_seqs:
+        dna_seq = dict_dna_seqs[id]
+        seq_name = (">" + str(id))
+        file.write(seq_name + "\n")
+        file.write(dna_seq + "\n")
+        file.write("\n")

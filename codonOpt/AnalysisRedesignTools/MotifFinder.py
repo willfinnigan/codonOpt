@@ -60,3 +60,19 @@ def find_motif_starts(dna_seq, motif):
             list_of_motif_starts.append(i)
 
     return list_of_motif_starts
+
+def count_number_of_motifs(dna_seq, list_of_motifs):
+    """ Given a list dna_seq and a list of motifs, will return number of those motifs in the dna_seq"""
+
+    logging.info('')
+    logging.info('--- Count number total number of motifs ---')
+
+    count = 0
+    for motif in list_of_motifs:
+        list_motif_starts = find_motif_starts(dna_seq, motif)
+        count += len(list_motif_starts)
+
+    logging.info('Count number of motifs... ' + str(count) + ' present')
+
+    return count
+

@@ -1,10 +1,16 @@
 # codonOpt
 
+This is a package to do codon optimisation in python.
+It can be installed using `sudo pip install codonOpt`
+
+https://github.com/willfinnigan/codonOpt
+
+
 Example:
 
 **1. Set up a codon table, and a sequence generator to use that codon table**
 
-`codon_table = CodonTable(codon_tables_dir='/tables/, json_file='E_coli.json', low_cuttoff=0.1)`
+`codon_table = CodonTable(codon_tables_dir='/tables/', json_file='E_coli.json', low_cuttoff=0.1)`
 
 `seq_gen = Sequence_Generator(codon_table)`
     
