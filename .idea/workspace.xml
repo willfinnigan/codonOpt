@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ccacc76-6bc7-419a-bfbb-7d0c5d174513" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/codonOpt.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="codonOpt.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -93,7 +88,7 @@
         <entry file="file://$PROJECT_DIR$/codonOpt/SeqMake.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="295">
-              <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+              <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
                 <element signature="e#2046#2468#0" expanded="false" />
@@ -175,7 +170,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/codonOpt/RedesignTools/ViennaRNA_wrapper.py" />
         <option value="$PROJECT_DIR$/codonOpt/RedesignTools/GeneralFunctions.py" />
         <option value="$PROJECT_DIR$/codonOpt/MultipleSequences.py" />
         <option value="$PROJECT_DIR$/codonOpt/setup.cfg" />
@@ -226,6 +220,7 @@
         <option value="$PROJECT_DIR$/codonOpt/AnalysisRedesignTools/GeneralFunctions.py" />
         <option value="$PROJECT_DIR$/codonOpt/global_vars.py" />
         <option value="$PROJECT_DIR$/codonOpt/SeqMake.py" />
+        <option value="$PROJECT_DIR$/ignore.gitignore" />
       </list>
     </option>
   </component>
@@ -707,7 +702,14 @@
       <option name="project" value="LOCAL" />
       <updated>1530603992579</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="deleted .idea">
+      <created>1530604082180</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1530604082180</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TodoView">
@@ -818,7 +820,8 @@
     <MESSAGE value="0.2 Setup" />
     <MESSAGE value="Updated Readme" />
     <MESSAGE value="Creating DNA and Protein classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creating DNA and Protein classes" />
+    <MESSAGE value="deleted .idea" />
+    <option name="LAST_COMMIT_MESSAGE" value="deleted .idea" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -841,7 +844,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/codonOpt.egg-info/top_level.txt" />
     <entry file="file://$PROJECT_DIR$/codonOpt.egg-info/dependency_links.txt" />
     <entry file="file://$PROJECT_DIR$/codonOpt/README" />
     <entry file="file://$PROJECT_DIR$/requirements.txt" />
@@ -1149,10 +1151,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ignore.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="18" lean-forward="true" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/codonOpt/SeqMake.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="295">
-          <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
             <element signature="e#2046#2468#0" expanded="false" />
