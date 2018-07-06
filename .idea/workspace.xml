@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8ccacc76-6bc7-419a-bfbb-7d0c5d174513" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/codonOpt/SeqMake.py" afterPath="$PROJECT_DIR$/codonOpt/SeqMake.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/codonOpt/__init__.py" afterPath="$PROJECT_DIR$/codonOpt/__init__.py" />
     </list>
     <ignored path="codonOpt.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -85,86 +83,7 @@
     </favorites_list>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SeqMake.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/codonOpt/SeqMake.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="100" lean-forward="false" selection-start-line="4" selection-start-column="100" selection-end-line="4" selection-end-column="100" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-                <element signature="e#178#7294#0" expanded="false" />
-                <element signature="e#238#642#0" expanded="false" />
-                <element signature="e#779#1222#0" expanded="false" />
-                <element signature="e#1280#2500#0" expanded="false" />
-                <element signature="e#2539#3072#0" expanded="false" />
-                <element signature="e#3207#3370#0" expanded="false" />
-                <element signature="e#3463#4449#0" expanded="false" />
-                <element signature="e#4597#5951#0" expanded="false" />
-                <element signature="e#4597#4759#1" expanded="false" />
-                <element signature="e#6023#6961#0" expanded="false" />
-                <element signature="e#7001#7005#0" expanded="false" />
-                <element signature="e#7043#7156#0" expanded="false" />
-                <element signature="e#7202#7294#0" expanded="false" />
-                <element signature="e#7329#9968#0" expanded="false" />
-                <element signature="e#7413#7608#0" expanded="false" />
-                <element signature="e#7722#8626#0" expanded="false" />
-                <element signature="e#8684#9332#0" expanded="false" />
-                <element signature="e#9384#9968#0" expanded="false" />
-                <element signature="e#9996#11522#0" expanded="false" />
-                <element signature="e#10060#10321#0" expanded="false" />
-                <element signature="e#10378#10479#0" expanded="false" />
-                <element signature="e#10532#10583#0" expanded="false" />
-                <element signature="e#10626#11255#0" expanded="false" />
-                <element signature="e#11295#11405#0" expanded="false" />
-                <element signature="e#11438#11522#0" expanded="false" />
-                <element signature="e#11546#12775#0" expanded="false" />
-                <element signature="e#11882#12039#0" expanded="false" />
-                <element signature="e#12089#12193#0" expanded="false" />
-                <element signature="e#12247#12390#0" expanded="false" />
-                <element signature="e#12443#12552#0" expanded="false" />
-                <element signature="e#12601#12658#0" expanded="false" />
-                <element signature="e#12691#12775#0" expanded="false" />
-                <element signature="e#12814#12869#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SeqEval.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/codonOpt/SeqEval.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="35" column="18" lean-forward="true" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
-              <folding>
-                <element signature="e#119#544#0" expanded="false" />
-                <element signature="e#604#855#0" expanded="false" />
-                <element signature="e#911#1289#0" expanded="false" />
-                <element signature="e#1347#1741#0" expanded="false" />
-                <element signature="e#1808#1860#0" expanded="false" />
-                <element signature="e#1959#2523#0" expanded="false" />
-                <element signature="e#2583#2760#0" expanded="false" />
-                <element signature="e#2832#3299#0" expanded="false" />
-                <element signature="e#3382#3457#0" expanded="false" />
-                <element signature="e#3548#4131#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sequence_evaluation_example.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/codonOpt/Examples/sequence_evaluation_example.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="14" lean-forward="true" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -240,15 +159,15 @@
         <option value="$PROJECT_DIR$/codonOpt/GeneralFunctions.py" />
         <option value="$PROJECT_DIR$/codonOpt/Examples/match_codon_usage_example.py" />
         <option value="$PROJECT_DIR$/codonOpt/Examples/freq_match_simple.py" />
-        <option value="$PROJECT_DIR$/codonOpt/ViennaRNA_wrapper.py" />
         <option value="$PROJECT_DIR$/old/AnalysisRedesignTools/MFE.py" />
         <option value="$PROJECT_DIR$/codonOpt/Examples/simple_example.py" />
         <option value="$PROJECT_DIR$/codonOpt/Examples/Just codon optimisation/simple_example.py" />
         <option value="$PROJECT_DIR$/codonOpt/Examples/sequence_evaluation_example.py" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/codonOpt/SeqMake.py" />
-        <option value="$PROJECT_DIR$/codonOpt/SeqEval.py" />
         <option value="$PROJECT_DIR$/codonOpt/__init__.py" />
+        <option value="$PROJECT_DIR$/codonOpt/ViennaRNA_wrapper.py" />
+        <option value="$PROJECT_DIR$/codonOpt/SeqEval.py" />
       </list>
     </option>
   </component>
@@ -800,7 +719,14 @@
       <option name="project" value="LOCAL" />
       <updated>1530862616687</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Split off eval functions into SeqEval">
+      <created>1530866211517</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1530866211517</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TodoView">
@@ -814,9 +740,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23909532" sideWeight="0.8312611" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23909532" sideWeight="0.8312611" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.48707592" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26027396" sideWeight="0.14701131" order="15" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.110958904" sideWeight="0.4838449" order="1" side_tool="false" content_ui="tabs" />
@@ -890,7 +815,8 @@
     <MESSAGE value="gitignore" />
     <MESSAGE value="Rewrite of sequence evaluation towards using a GA instead of step by step sequence optimisation" />
     <MESSAGE value="Updated read-me to be simpler reflect ongoing changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated read-me to be simpler reflect ongoing changes" />
+    <MESSAGE value="Split off eval functions into SeqEval" />
+    <option name="LAST_COMMIT_MESSAGE" value="Split off eval functions into SeqEval" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1211,17 +1137,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/codonOpt/ViennaRNA_wrapper.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#17#0" expanded="false" />
-            <element signature="e#249#996#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/old/AnalysisRedesignTools/MFE.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="434">
@@ -1283,6 +1198,63 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/codonOpt/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="e#21#104#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codonOpt/Examples/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codonOpt/ViennaRNA_wrapper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="42" column="22" lean-forward="true" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
+          <folding>
+            <element signature="e#249#996#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codonOpt/Examples/sequence_evaluation_example.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codonOpt/SeqEval.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="795">
+          <caret line="158" column="0" lean-forward="true" selection-start-line="158" selection-start-column="0" selection-end-line="158" selection-end-column="0" />
+          <folding>
+            <element signature="e#119#544#0" expanded="false" />
+            <element signature="e#604#855#0" expanded="false" />
+            <element signature="e#911#1289#0" expanded="false" />
+            <element signature="e#1347#1741#0" expanded="false" />
+            <element signature="e#1808#1860#0" expanded="false" />
+            <element signature="e#1959#2523#0" expanded="false" />
+            <element signature="e#2583#2760#0" expanded="false" />
+            <element signature="e#2832#3299#0" expanded="false" />
+            <element signature="e#3382#3457#0" expanded="false" />
+            <element signature="e#3548#4131#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/codonOpt/SeqMake.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -1322,53 +1294,6 @@
             <element signature="e#12601#12658#0" expanded="false" />
             <element signature="e#12691#12775#0" expanded="false" />
             <element signature="e#12814#12869#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codonOpt/SeqEval.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="35" column="18" lean-forward="true" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
-          <folding>
-            <element signature="e#119#544#0" expanded="false" />
-            <element signature="e#604#855#0" expanded="false" />
-            <element signature="e#911#1289#0" expanded="false" />
-            <element signature="e#1347#1741#0" expanded="false" />
-            <element signature="e#1808#1860#0" expanded="false" />
-            <element signature="e#1959#2523#0" expanded="false" />
-            <element signature="e#2583#2760#0" expanded="false" />
-            <element signature="e#2832#3299#0" expanded="false" />
-            <element signature="e#3382#3457#0" expanded="false" />
-            <element signature="e#3548#4131#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codonOpt/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding>
-            <element signature="e#21#104#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codonOpt/Examples/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codonOpt/Examples/sequence_evaluation_example.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="14" lean-forward="true" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
