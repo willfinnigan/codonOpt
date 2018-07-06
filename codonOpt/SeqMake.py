@@ -514,13 +514,6 @@ def evaluate_mfe(dna_string, window_sizes=((10,5,-10), (20,10,-10), (100,50,-10)
     return return_dict
 
 
-
-
-
-
-
-    mfe_10bp_windows = calc_mfe_windowed(dna_string, window_size=10, window_move=5)
-
 """ Codon Usage """
 
 
@@ -536,7 +529,6 @@ def evaluate_mfe(dna_string, window_sizes=((10,5,-10), (20,10,-10), (100,50,-10)
 
 
 
-# TODO Add Secondary structure and metrics
 # TODO Add codon usage metrics
 # TODO Add repeat sequence metrics
 

@@ -2,28 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ccacc76-6bc7-419a-bfbb-7d0c5d174513" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/codonOpt/AnalysisRedesignTools/EvaluateCodonUsage.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/codonOpt/AnalysisRedesignTools/GCTools.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/codonOpt/AnalysisRedesignTools/GeneralFunctions.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/codonOpt/AnalysisRedesignTools/MFE.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/codonOpt/AnalysisRedesignTools/MotifFinder.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/codonOpt/AnalysisRedesignTools/ViennaRNA_wrapper.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/codonOpt/AnalysisRedesignTools/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/codonOpt/Examples/fasta_import_export_example.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/codonOpt/Examples/freq_math_simple.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/codonOpt/Examples/only_rare_codons_example.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/codonOpt/Examples/only_redesign_start_example.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/codonOpt/Examples/simple_example.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/codonOpt/Examples/two_codon_tables_example.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/codonOpt/Frequency_Match.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/codonOpt/test/Escherichia_coli_K12.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/codonOpt/test/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/codonOpt/test/tests_codontable.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/codonOpt/test/tests_seqmake.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/codonOpt/Examples/evol.py" afterPath="$PROJECT_DIR$/codonOpt/Examples/evol.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/codonOpt/SeqMake.py" afterPath="$PROJECT_DIR$/codonOpt/SeqMake.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/codonOpt/__init__.py" afterPath="$PROJECT_DIR$/codonOpt/__init__.py" />
     </list>
     <ignored path="codonOpt.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -108,8 +89,8 @@
       <file leaf-file-name="SeqMake.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/codonOpt/SeqMake.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="385" column="0" lean-forward="true" selection-start-line="385" selection-start-column="0" selection-end-line="385" selection-end-column="0" />
+            <state relative-caret-position="630">
+              <caret line="514" column="0" lean-forward="false" selection-start-line="514" selection-start-column="0" selection-end-line="514" selection-end-column="0" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
                 <element signature="e#233#8038#0" expanded="false" />
@@ -154,19 +135,7 @@
                 <element signature="e#16142#16319#0" expanded="false" />
                 <element signature="e#16391#16858#0" expanded="false" />
                 <element signature="e#16941#17016#0" expanded="false" />
-                <element signature="e#17107#17781#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sequence_evaluation_example.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/codonOpt/Examples/sequence_evaluation_example.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="15" lean-forward="true" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="15" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
+                <element signature="e#17107#17690#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -226,7 +195,6 @@
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/codonOpt/test/tests_codontable.py" />
         <option value="$PROJECT_DIR$/codonOpt/Examples/Data/Escherichia_coli_K12_more_rare.json" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/codonOpt/Examples/only_redesign_start_example.py" />
         <option value="$PROJECT_DIR$/codonOpt/Examples/Data/only_rare_codons_example.py" />
         <option value="$PROJECT_DIR$/codonOpt/Examples/two_codon_tables_example.py" />
@@ -254,9 +222,10 @@
         <option value="$PROJECT_DIR$/old/AnalysisRedesignTools/MFE.py" />
         <option value="$PROJECT_DIR$/codonOpt/__init__.py" />
         <option value="$PROJECT_DIR$/codonOpt/Examples/simple_example.py" />
-        <option value="$PROJECT_DIR$/codonOpt/SeqMake.py" />
         <option value="$PROJECT_DIR$/codonOpt/Examples/Just codon optimisation/simple_example.py" />
         <option value="$PROJECT_DIR$/codonOpt/Examples/sequence_evaluation_example.py" />
+        <option value="$PROJECT_DIR$/codonOpt/SeqMake.py" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -311,6 +280,20 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="codonOpt" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="codonOpt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="codonOpt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="codonOpt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="codonOpt" />
@@ -759,7 +742,14 @@
       <option name="project" value="LOCAL" />
       <updated>1530604422621</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Rewrite of sequence evaluation towards using a GA instead of step by step sequence optimisation">
+      <created>1530862143324</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1530862143324</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TodoView">
@@ -847,7 +837,8 @@
     <MESSAGE value="Creating DNA and Protein classes" />
     <MESSAGE value="deleted .idea" />
     <MESSAGE value="gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="gitignore" />
+    <MESSAGE value="Rewrite of sequence evaluation towards using a GA instead of step by step sequence optimisation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rewrite of sequence evaluation towards using a GA instead of step by step sequence optimisation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -870,20 +861,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/old/Examples/Data/Tth codon table.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/old/Examples/only_redesign_start_example.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="21" lean-forward="true" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/old/Examples/two_codon_tables_example.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="307">
@@ -1024,14 +1001,6 @@
             <element signature="e#21#64#0" expanded="false" />
             <element signature="e#315#1294#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ignore.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="10" lean-forward="true" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1239,16 +1208,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/codonOpt/Examples/Just codon optimisation/simple_example.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="14" lean-forward="true" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/codonOpt/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -1267,10 +1226,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/MANIFEST">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="9" lean-forward="true" selection-start-line="1" selection-start-column="9" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ignore.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="10" lean-forward="true" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codonOpt/Examples/Just codon optimisation/simple_example.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="11" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="180">
+            <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/codonOpt/SeqMake.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="385" column="0" lean-forward="true" selection-start-line="385" selection-start-column="0" selection-end-line="385" selection-end-column="0" />
+        <state relative-caret-position="630">
+          <caret line="514" column="0" lean-forward="false" selection-start-line="514" selection-start-column="0" selection-end-line="514" selection-end-column="0" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
             <element signature="e#233#8038#0" expanded="false" />
@@ -1315,7 +1311,7 @@
             <element signature="e#16142#16319#0" expanded="false" />
             <element signature="e#16391#16858#0" expanded="false" />
             <element signature="e#16941#17016#0" expanded="false" />
-            <element signature="e#17107#17781#0" expanded="false" />
+            <element signature="e#17107#17690#0" expanded="false" />
           </folding>
         </state>
       </provider>
