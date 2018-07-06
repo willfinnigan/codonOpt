@@ -1,8 +1,6 @@
 __author__ = 'Will'
 
-from codonOpt.SeqMake import CodonTable, Sequence_Generator, DNA, Protein, make_dna
-
-from codonOpt.AnalysisRedesignTools.GeneralFunctions import import_protein_fasta, export_dna_dict_fasta
+from codonOpt.SeqMake import CodonTable, Sequence_Generator, DNA, Protein, make_dna, evaluate_motifs, evaluate_gc_content, evaluate_mfe
 
 
 

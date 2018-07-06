@@ -1,6 +1,6 @@
-import codonOpt
 import logging
-from codonOpt.AnalysisRedesignTools import GCTools
+
+import codonOpt
 
 logging.basicConfig(level=logging.INFO)
 
@@ -52,7 +52,7 @@ print(str(toolbox.individual()))
 
 
 def evaluate(individual):
-    from codonOpt.AnalysisRedesignTools import GCTools
+    from old.AnalysisRedesignTools import GCTools
     no_over = GCTools.percentage_bp_in_windows_over_gc_threshold(str(individual), 100, 60)
 
     return(no_over,)

@@ -1,41 +1,11 @@
-import lea
-import logging, json
+import json
+import logging
 import math
-
-from codonOpt.global_vars import empty_codon_table, uniform_codon_table
-from codonOpt.AnalysisRedesignTools import MotifFinder, GCTools, MFE
-from codonOpt.AnalysisRedesignTools.GeneralFunctions import return_window_in_frame, translate, check_protein_seq, check_dna_back_translation
-
-
-"""SeqMake Module.
-
-Summary:
+import lea
+from codonOpt.global_vars import empty_codon_table, uniform_codon_table, amino_acids_list, DNA_to_aa
+from codonOpt.ViennaRNA_wrapper import RNA_fold_output
 
 
-Example:
-
-1.  Set up a codon table, and a sequence generator to use that codon table
-
-    codon_table = CodonTable(codon_tables_dir=codon_tables_dir, json_file='Escherichia_coli_K12.json', low_cuttoff=0.1)
-    seq_gen = Sequence_Generator(codon_table)
-    
-2.  Optimise your protein sequence    
-    
-    protein_seq = "MRAVVFENKERVAVKEVNAPRLQHPLDALVRVHLAGICGSD*"
-    dna_seq = seq_gen.optimise(protein_seq)
-    
-3.  Remove any restriction sites or other sequence motifs you don't want
-
-    motifs_to_remove = ["ATAA", 'GGAGA', "TACAG"]
-    dna_seq = seq_gen.motif_removal(dna_seq, motifs_to_remove)
-    
-4.  Run other types of redesign routines to minimise folding energy, lower gc content ect..
-
-    dna_seq = seq_gen.remove_high_GC_windows(dna_seq, 100, 67)
-    dna_seq = seq_gen.minimise_mfe_windows(dna_seq, -10, 30, 5)
-    dna_seq = seq_gen.minimise_mfe_five_prime(dna_seq, -5)
-
-"""
 
 class CodonTable():
     """CodonTable class - uses codontable.lea_codon_dict for optimisation, loads from json file
@@ -53,7 +23,7 @@ class CodonTable():
 
     """
 
-    def __init__(self, codon_tables_dir = '', json_file='', low_cuttoff=0.0):
+    def __init__(self, json_file='', low_cuttoff=0.0):
 
         self.codon_dict = {}
         self.codon_dict_to_make_lea_dict = {}
@@ -62,21 +32,19 @@ class CodonTable():
         self.rscu_dict = {}
 
         if json_file != '':
-            self.codon_dict = self.load_codon_table_from_json(codon_tables_dir, json_file)
+            self.codon_dict = self.load_codon_table_from_json(json_file)
             self.check_codon_table(self.codon_dict)
             self.remove_rare_codons_for_lea_dict()
             self.make_lea_dict()
 
 
     """ Main functions to make a default codon table using lea dict """
-    def load_codon_table_from_json(self, codon_tables_dir, json_file):
+    def load_codon_table_from_json(self, json_file):
 
-        logging.info('')
         logging.info('---Load Codon Table---')
-        json_path = codon_tables_dir+json_file
 
         # Open to codon table json.
-        with open(json_path, 'r') as fp:
+        with open(json_file, 'r') as fp:
             codon_dict = json.load(fp)
 
         # Make nested dicts from json into dicts
@@ -84,15 +52,13 @@ class CodonTable():
             codon_dict[aa] = dict(codon_dict[aa])
 
         # Logging
-        logging.info('Loaded codon dict from json at: ' + str(json_path))
+        logging.info('Loaded codon dict from json at: ' + str(json_file))
         logging.info(str(codon_dict))
-        logging.info('')
 
         return codon_dict
 
     def remove_rare_codons_for_lea_dict(self):
 
-        logging.info('')
         logging.info('---Make Lea Codon Table for optimisation---')
         logging.info('Low cuttoff has been set at ' + str(self.low_cuttoff) + '  (codons used less than ' + str(self.low_cuttoff*100) + '% of the time)' )
 
@@ -117,16 +83,14 @@ class CodonTable():
         # Then convert to lea dict
         self.lea_codon_dict = {}
         for aa in self.codon_dict:
-            self.lea_codon_dict[aa] = lea.Lea.fromValFreqsDict(self.codon_dict_to_make_lea_dict[aa])
+            self.lea_codon_dict[aa] = lea.pmf(self.codon_dict_to_make_lea_dict[aa])
 
         # Logging
-        logging.debug('')
         logging.debug('\nLea codon dict: ')
         logging.debug('Note: The Lea Module creates fractions which it will use to pick triplets, '
                       'where there is only 1 triplet (and where other triplets have been removed due to the cuttoff), the fraction will be 1')
 
         logging.debug(str(self.lea_codon_dict))
-        logging.info('')
 
 
     """ Functions to check codon tabel is correct """
@@ -139,7 +103,6 @@ class CodonTable():
 
     def check_codon_table(self, codon_table, test_codon_table=empty_codon_table):
 
-        logging.info('')
         logging.info('---Check codon table uses correct triplet codes---')
 
         test_pass = True
@@ -161,7 +124,6 @@ class CodonTable():
                 raise NameError('Codon Table uses incorrect triplets', str(sorted(triplets_in_codon_table)))
 
         logging.info('Passed')
-        logging.info('')
 
         return test_pass
 
@@ -220,8 +182,7 @@ class CodonTable():
         logging.debug(str(self.codon_dict_to_make_lea_dict))
 
     def calculate_rscu(self):
-        for aa in self.codon_dict:
-           triplet_dict = self.codon_dict[aa]
+        pass
 
     def make_uniform(self):
         self.codon_dict = uniform_codon_table
@@ -229,55 +190,30 @@ class CodonTable():
         self.make_lea_dict()
 
     def return_freq(self, triplet):
-        aa = translate(triplet)
+        aa = DNA_to_aa.get(triplet)
         freq = self.codon_dict[aa][triplet]
 
         return freq
 
-#TODO convert seq_gen to use the DNA and Protein classes and get rid of the extra make_dna function
 class Sequence_Generator():
 
-    def __init__(self, codon_table, check_dna_to_protein=False):
+    def __init__(self, codon_table, check_dna_to_protein=False, logging=False):
         self.codon_table = codon_table
         self.motifs_to_avoid = []
         self.check_dna_to_protein = check_dna_to_protein
         self.optimisation_mode = 'default'
+        self.logging = logging
 
-    def optimise_from_protein(self, protein_seq, log=False):
+    """ These functions can be called to do codon optimisation"""
+    def optimise(self, protein_seq):
 
-        if self.optimisation_mode == 'default':
-            dna_seq = self.default_optimise(protein_seq, log=log)
-
-        elif self.optimisation_mode == 'only_rare':
-            print("Please run optimise_dna to only remove rare codons")
-
-        elif self.optimisation_mode == 'match_codon_usage':
-            print("Please run optimise_dna to match codon_usage")
-
-        return dna_seq
-
-    def optimise_from_dna(self, dna_seq, codon_table={}):
-
-        if self.optimisation_mode == 'default':
-            dna_seq = self.default_optimise_from_dna(dna_seq)
-
-        elif self.optimisation_mode == 'only_rare':
-            dna_seq = self.only_remove_rare_codons(dna_seq)
-
-        elif self.optimisation_mode == 'match_codon_usage':
-            print("Please run optimise_dna to match codon_usage")
-
-    def default_optimise_from_protein(self, protein_seq, log=False):
-        # Make protein_seq all uppercase
-        for i in range(len(protein_seq)):
-            protein_seq[i] = str(protein_seq[i]).upper()
+        if type(protein_seq) == str:
+            protein_seq = Protein(protein_seq)
+        protein_seq.make_uppercase()
 
         # Set variable to hold new dna sequence
         dna_seq = DNA([])
-
-        # Check protein seq is valid
-        if self.check_dna_to_protein == True:
-            check_protein_seq(protein_seq)
+        dna_seq.protein = protein_seq
 
         # Iterate over the protein sequence, for each amino acid randomly select a triplet from the lea codon table,
         for i in range(len(protein_seq)):
@@ -285,37 +221,13 @@ class Sequence_Generator():
             dna_seq.append(self.codon_table.lea_codon_dict[aa].random())
 
         # Log new DNA sequence
-        if log == True:
-            logging.info('')
+        if self.logging == True:
             logging.info('---Optimise DNA sequence using codon table---')
             logging.info('DNA Seq Generated: ' + str(dna_seq))
-            logging.info('')
 
         # Check that the new DNA sequence can be translated back to the same protein sequence
         if self.check_dna_to_protein == True:
-            check_dna_back_translation(dna_seq, protein_seq)
-
-        return dna_seq
-
-    def default_optimise_from_dna(self, dna_seq):
-        print(dna_seq)
-        protein = translate(dna_seq)
-
-        print(protein)
-        # Create a codon optimised dna sequenced from the protein sequence.
-        return self.default_optimise_from_protein(protein)
-
-    def redesign_section(self, dna_seq, start_triplet, end_triplet):
-
-        # Take a section of the dna_seq between start and end.
-        window = DNA(dna_seq[start_triplet:end_triplet])
-        print(window)
-
-        # Codon optimise the window
-        new_window = self.default_optimise_from_dna(window)
-
-        # Replace the window section of dna_seq with the newly codon optimised new_window
-        dna_seq = DNA(dna_seq[:start_triplet] + new_window + dna_seq[end_triplet:])
+            dna_seq.check_dna_equals_protein()
 
         return dna_seq
 
@@ -342,7 +254,7 @@ class Sequence_Generator():
 
         for i in range(len(dna_seq)):
             freq = dna_seq.freq[i]
-            aa = translate(dna_seq[i])
+            aa = DNA_to_aa.get(dna_seq[i])
 
             triplet_dict = self.codon_table.codon_dict[aa]
             best_difference = 1
@@ -360,89 +272,18 @@ class Sequence_Generator():
 
         return new_seq
 
-    """ ------- 
-    These functions use the AnalysisRedesignTools
-        -------"""
-    def motif_removal(self, dna_seq, motifs):
-
-        motifs_present = True
-
-        while motifs_present == True:
-            for motif_seq in motifs:
-                list_of_motif_starts = MotifFinder.find_motif_starts(dna_seq, motif_seq)
-                dna_seq = MotifFinder.remove_motif(dna_seq, list_of_motif_starts, motif_seq, self)
-
-            # Check motifs = 0
-            if MotifFinder.count_number_of_motifs(dna_seq, motifs) == 0:
-                motifs_present = False
-
-
-        return dna_seq
-
-    def remove_high_GC_windows(self, dna_seq, window_size, GC_cuttoff):
-        # For IDT windows of 100bp must be less than 76% GC
-        # For IDT windows of 600bp must be less than 68% GC
-
-        logging.info('')
-        logging.info('---Checking GC Content for ' + str(window_size) + 'bp windows is less than ' + str(GC_cuttoff) + '% ---')
-
-        for i in range(len(dna_seq) - window_size):
-            start = i
-            end = i + window_size
-            gc_window = GCTools.calc_GC_content(dna_seq[start:end])
-
-            if gc_window > GC_cuttoff:
-                logging.info('-- ' + str(window_size) + " bp window starting " + str(start) + " has a GC content of " + str(gc_window) + '.. redesigning to less than ' + str(GC_cuttoff))
-
-                start, end = return_window_in_frame(dna_seq, i, i + window_size)
-                window = GCTools.reduce_GC(dna_seq[start:end], GC_cuttoff, self)
-                dna_seq = dna_seq[0:start] + window + dna_seq[end:len(dna_seq)]
-
-        return dna_seq
-
-    def minimise_mfe_windows(self, dna_seq, energy_limit, window_size, window_move, max_loops=10, max_iterations=100):
-        count = 0
-        changed = True
-
-        # This will keep going until no more changes are made, or the max loops is reached
-        while (changed == True) and (count < max_loops):
-            dna_seq_old = dna_seq
-            dna_seq = MFE.minimise_mfe_in_windows(dna_seq, energy_limit, window_size,
-                                                      window_move, self, iterations=max_iterations)
-            count +=1
-
-            if dna_seq == dna_seq_old:
-                changed=False
-
-
-        if count >= max_loops:
-            logging.warning("Max Loops reached when minimising MFE in windows")
-
-        logging.info('')
-        logging.info('--- MFE window minimisation complete, number of loops through dna sequence = ' + str(count) + ' ---')
-        logging.info('')
-
-
-
-        return dna_seq
-
-    def minimise_mfe_five_prime(self, dna_seq, energy_limit, five_prime_length=20, max_iterations=100):
-        logging.info('---Minimise five prime folding energy in first '
-                     + str(five_prime_length) + ' to be less than '
-                     + str(energy_limit) + ' ---')
-
-        dna_seq = MFE.minimise_mfe(dna_seq, 0, five_prime_length, self, energy_limit, iterations=max_iterations)
-        return dna_seq
-
 class Protein(list):
 
-    def __init__(self, protein):
+    def __init__(self, protein, check_protein_valid=False):
         super(Protein, self).__init__()
 
         if type(protein) == str:
             self.input_as_string(protein)
         elif type(protein) == list:
             self.input_as_list(protein)
+
+        if check_protein_valid == True:
+            self.check_protein_seq()
 
     def input_as_string(self, protein_string):
         for i in range(0,len(protein_string)):
@@ -452,6 +293,32 @@ class Protein(list):
     def input_as_list(self, protein_list):
         for aa in protein_list:
             self.append(aa)
+
+    def check_protein_seq(self):
+        """Checks the protein sequence against a list of amino acid characters.
+
+        Returns:
+            bool: The return value. True for success,  will raise a NameError is failed.
+
+        """
+        logging.debug('Checking protein sequence is valid...')
+
+        for i in range(len(self)):
+            self[i] = self[i].upper()
+
+        for aa in self:
+            if aa not in amino_acids_list:
+                logging.warning('Non amino acid character found in protein sequence: ' + aa)
+                raise NameError('Non amino acid character found in protein sequence')
+
+        logging.debug('Passed')
+
+        return True
+
+    def make_uppercase(self):
+        # Make protein_seq all uppercase
+        for i in range(len(self)):
+            self[i] = str(self[i]).upper()
 
     def __str__(self):
         s = ""
@@ -473,12 +340,19 @@ class DNA(list):
         self.protein = Protein(self.back_translate())
         self.freq = []
 
+
+
     def back_translate(self):
-        protein = []
+        translated_protein = Protein([])
         for triplet in self:
-            translated = translate(triplet)
-            protein.append(translated)
-        return protein
+            translated_protein.append(DNA_to_aa.get(triplet))
+        return translated_protein
+
+    def check_dna_equals_protein(self):
+        if self.back_translate() == self.protein:
+            return True
+        else:
+            return False
 
     def get_frequencies(self, codon_table):
         self.freq = []
@@ -505,14 +379,165 @@ class DNA(list):
         return s
 
 def make_dna(protein, seq_gen):
-    dna_seq = []
 
-    for aa in protein:
-        dna_seq.append(seq_gen.optimise(aa))
+    dna_seq = seq_gen.optimise(protein)
 
     return dna_seq
 
 
+""" Motifs"""
+def find_motifs(dna_string, motif_string):
+
+    motifs_binary = '0' * len(dna_string)
+    count = 0
+
+    for i in range(len(dna_string)):
+        window = dna_string[i:i+len(motif_string)]
+
+        if window == motif_string:
+            motifs_binary = motifs_binary[:i] + ('1'*len(motif_string)) + motifs_binary[(i+len(motif_string)):]
+            count += 1
+
+
+    return_dict = {'motifs_binary' : motifs_binary,
+                   'count' : count}
+
+    return return_dict
+
+def evaluate_motifs(dna_string, list_motif_strings):
+
+    motif_evaluation_dict = {}
+    count = 0
+
+    for motif in list_motif_strings:
+        motif_evaluation_dict[motif] = find_motifs(dna_string, motif)
+        count += 1
+
+    motif_evaluation_dict['total_count'] = count
+
+    return motif_evaluation_dict
+
+""" GC content """
+def calc_GC_content(sequence):
+    # This function will calculate and return the GC content of a sequence
+
+    seq_length = len(sequence)
+    count_of_GC = 0
+
+    for i in range(seq_length):
+        nucleotide = sequence[i]
+        if nucleotide == "G" or nucleotide == "C":
+            count_of_GC += 1
+
+    GC_content = (count_of_GC / seq_length)*100
+    GC_content = round(GC_content, 2)
+
+    return GC_content
+
+def map_GC(dna_string, window_size, window_move=1):
+    # This function calculates GC content in windows, moving along the sequence 1bp at a time.
+    bp_list = []
+    gc_content_list = []
+
+    for i in range(0, len(dna_string)-window_size, window_move):
+        window = dna_string[i:i+window_size]
+        gc_window = calc_GC_content(window)
+        gc_content_list.append(gc_window)
+        bp_list.append(i)
+
+    return (bp_list, gc_content_list)
+
+def gc_windows_above_threshold(list_gc_windows, threshold):
+
+    return sum(gc < threshold for gc in list_gc_windows)
+
+def evaluate_gc_content(dna_string, windows=((10,1,70), (20,1,70), (50,1,70), (100,1,70))):
+
+    return_dict = {}
+    return_dict['total_gc'] = calc_GC_content(dna_string)
+
+    count = 0
+    for window in windows:
+        gc_windows =  map_GC(dna_string, window[0], window_move=window[1])[1]
+        num_above_threshold = gc_windows_above_threshold(gc_windows, window[2])
+        count += num_above_threshold
+
+        return_dict['gc_' + str(window[0]) + '_windows'] = gc_windows
+        return_dict[str(window[0]) + 'bp_windows_above_' + str(window[2])] = num_above_threshold
+
+    return_dict['total_gc_windows_above_threshold'] = count
+
+    return return_dict
+
+""" Secondary Structure """
+def calc_mfe(dna_string):
+    # This function will calculate the minimum folding energy (MFE) of a given sequence - uses ViennaRNA to do this
+    energy = RNA_fold_output(dna_string).energy
+    return energy
+
+def calc_mfe_windowed(dna_string, window_size=30, window_move=5):
+    # This function will generate a list of MFE's.
+    # It will move along a given DNA sequence calculating MFE's a sequence then length of window_size, moving by window_move each time.
+
+    bp_list = []
+    mfe_list = []
+
+    for i in range(0, len(dna_string)-window_size, window_move):
+        window = dna_string[i:i+window_size]
+        energy_window = calc_mfe(window)
+        mfe_list.append(energy_window)
+        bp_list.append(i)
+
+    return (bp_list, mfe_list)
+
+def mfe_windows_above_threshold(list_of_window_energies, energy_threshold):
+
+    return sum(energy < energy_threshold for energy in list_of_window_energies)
+
+def evaluate_mfe(dna_string, window_sizes=((10,5,-10), (20,10,-10), (100,50,-10))):
+
+    return_dict={}
+    return_dict['total_mfe'] = calc_mfe(dna_string)
+
+    count = 0
+    for sizes in window_sizes:
+
+        mfe_windows = calc_mfe_windowed(dna_string, window_size=sizes[0], window_move=sizes[1])[1]
+        num_above_threshold = mfe_windows_above_threshold(mfe_windows, sizes[2])
+        count += num_above_threshold
+
+        return_dict['mfe_' + str(sizes[0]) + '_windows'] = mfe_windows
+        return_dict[str(sizes[0]) + 'bp_windows_below_' + str(sizes[2])] = num_above_threshold
+
+    return_dict['total_mfe_windows_above_threshold'] = count
+
+    return return_dict
 
 
 
+
+
+
+
+    mfe_10bp_windows = calc_mfe_windowed(dna_string, window_size=10, window_move=5)
+
+""" Codon Usage """
+
+
+""" How repetitive is the sequence """
+
+
+
+
+
+
+
+
+
+
+
+# TODO Add Secondary structure and metrics
+# TODO Add codon usage metrics
+# TODO Add repeat sequence metrics
+
+# TODO Neural network to say whether this gene comes from X organism or not!!!
