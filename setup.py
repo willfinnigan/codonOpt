@@ -5,7 +5,7 @@ setup(
     version='0.23',
 
     packages=find_packages(),
-    package_data={'codonOpt': ['Data/*.json']},
+    package_data={'codonOpt': ['Examples']},
 
     url='https://github.com/willfinnigan/codonOpt',
     license='MIT',
